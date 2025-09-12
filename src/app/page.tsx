@@ -1,3 +1,8 @@
+import HeaderDark from "@/components/header-dark";
+
 export default function Home() {
-  return <div></div>;
+  return 
+  <div>
+    <HeaderDark/>
+  </div>;
 }
