@@ -9,19 +9,19 @@ export const collapsibles = [
     icon: "/assets/icons/commitment.svg",
     title: "Commitment to global and national goals",
     content:
-      "The deep positive impact of our work on our many project beneficiaries is at the core of our success. Stories of greater access to sustainable energy that results in higher income opportunities, better learning and improved healthcare motivate us to keep going. ",
+      "We are deeply committed to the UN’s vision of SDG 7 to ensure access to affordable, reliable, sustainable and modern energy for all . We are also aligned with Nigeria’s Energy Transition Plan, bridging the gap to net-zzero by 2060 via decentralized renewable approaches.",
   },
   {
     icon: "/assets/icons/africa.svg",
     title: "The love of Africa",
     content:
-      "The deep positive impact of our work on our many project beneficiaries is at the core of our success. Stories of greater access to sustainable energy that results in higher income opportunities, better learning and improved healthcare motivate us to keep going. ",
+      "Inspired by Mission 300, we aim to connect millions of Africans to the world through distributed renewable energy solutions.",
   },
   {
     icon: "/assets/icons/earth.svg",
     title: "A passion for the Earth",
     content:
-      "The deep positive impact of our work on our many project beneficiaries is at the core of our success. Stories of greater access to sustainable energy that results in higher income opportunities, better learning and improved healthcare motivate us to keep going. ",
+      "Implementing new energy solutions as fast as possible is essential to counter climate change, one of the biggest threats to our own survival.",
   },
 ];
 

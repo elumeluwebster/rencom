@@ -1,16 +1,54 @@
 "use client";
 import React, { useState } from "react";
-import HeaderDark from "@/components/header-dark";
+import HeaderLight from "@/components/header-dark";
 
 import { collapsibles } from "@/utils/store";
+import { useRouter } from "next/navigation";
 
 export default function About() {
+  const router = useRouter();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
+  const handleClick = () => {
+    router.push("#");
+  };
+
   return (
     <>
-      <HeaderDark />
+      <section className="relative bg-[url('/assets/images/about-hero.png')] bg-cover bg-center bg-no-repeat h-screen w-full">
+        <div className="absolute top-0 left-0 w-full">
+          <HeaderLight />
+        </div>
+
+        <div className="absolute text-white mb-10 px-20 bottom-0 left-0 justify-start">
+          <div className="flex flex-col"></div>
+
+          <h2 className="text-newsreader text-8xl py-2">About Us</h2>
+          <p className="mt-4 font-light">
+            We combine innovation, impact, and sustainability to deliver energy
+            <br />
+            solutions that transform lives and protect the planet.
+          </p>
+
+          <div
+            className="flex flex-row gap-2 items-center mt-10"
+            onClick={handleClick}
+          >
+            <button className="text-black py-3 px-4 rounded-3xl cursor-pointer font-light bg-[#E1FCAD]">
+              Continue Reading
+            </button>
+
+            <div className="cursor-pointer rounded-full bg-[#E1FCAD] p-3 flex items-center justify-center">
+              <img
+                src="/assets/icons/down-right-arrow.svg"
+                alt="arrow icon"
+                className="w-4 h-4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="mt-24 px-4 sm:px-6 md:px-28 pb-24">
         <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 mt-12 mb-20">
@@ -111,7 +149,7 @@ export default function About() {
             ))}
           </div>
           <img
-            src="/assets/images/engineer.png"
+            src="/assets/images/impact.png"
             className="w-full md:w-1/2 mt-6 md:mt-0 rounded-lg"
             alt="Section 2"
           />

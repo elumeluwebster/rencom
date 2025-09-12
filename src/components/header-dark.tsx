@@ -23,8 +23,8 @@ const HeaderDark = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <img
-                src="/assets/icons/logo-dark.svg"
-                alt="remcon dark logo"
+                src="/assets/icons/logo-light.svg"
+                alt="remcon light logo"
                 height={70}
                 width={120}
               />
