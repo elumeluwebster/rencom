@@ -1,3 +1,4 @@
+import HeaderDark from "@/components/header-dark";
 import "./globals.css";
 
 export default function RootLayout({
