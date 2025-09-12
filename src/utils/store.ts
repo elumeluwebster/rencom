@@ -1,21 +1,26 @@
 export const collapsibles = [
   {
+    icon: "/assets/icons/testimonies.svg",
     title: "Testimonies of improved lives",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content:
+      "The deep positive impact of our work on our many project beneficiaries is at the core of our success. Stories of greater access to sustainable energy that results in higher income opportunities, better learning and improved healthcare motivate us to keep going.",
   },
   {
+    icon: "/assets/icons/commitment.svg",
     title: "Commitment to global and national goals",
     content:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The deep positive impact of our work on our many project beneficiaries is at the core of our success. Stories of greater access to sustainable energy that results in higher income opportunities, better learning and improved healthcare motivate us to keep going. ",
   },
   {
+    icon: "/assets/icons/africa.svg",
     title: "The love of Africa",
     content:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      "The deep positive impact of our work on our many project beneficiaries is at the core of our success. Stories of greater access to sustainable energy that results in higher income opportunities, better learning and improved healthcare motivate us to keep going. ",
   },
   {
+    icon: "/assets/icons/earth.svg",
     title: "A passion for the Earth",
     content:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "The deep positive impact of our work on our many project beneficiaries is at the core of our success. Stories of greater access to sustainable energy that results in higher income opportunities, better learning and improved healthcare motivate us to keep going. ",
   },
 ];
