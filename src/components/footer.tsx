@@ -54,13 +54,16 @@ const Footer = () => {
 
         <div className="text-[#bcbcbc] font-geist font-extralight pt-4 text-left px-6 md:px-28 text-sm leading-relaxed">
           <p>
-            RenCom is committed to Sustainable Development Goal 7. In line with
-            Target 7.1, we expand universal access to modern energy services
-            through off-grid and home solar systems as well as mini-grids,
-            supporting communities where the grid is absent. Aligned with Target
-            7.2, our emphasis on solar and clean cooking technologies increases
-            the share of renewable energy and advances the global shift toward
-            sustainability
+            RenCom is committed to{" "}
+            <span className="font-bold text-white">
+              Sustainable Development Goal 7
+            </span>
+            . In line with Target 7.1, we expand universal access to modern
+            energy services through off-grid and home solar systems as well as
+            mini-grids, supporting communities where the grid is absent. Aligned
+            with Target 7.2, our emphasis on solar and clean cooking
+            technologies increases the share of renewable energy and advances
+            the global shift toward sustainability
           </p>
         </div>
 
