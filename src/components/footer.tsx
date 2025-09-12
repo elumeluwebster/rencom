@@ -54,17 +54,13 @@ const Footer = () => {
 
         <div className="text-[#bcbcbc] font-geist font-extralight pt-4 text-left px-6 md:px-28 text-sm leading-relaxed">
           <p>
-            This text is a legal disclaimer designed for the footer of a
-            website. Begin with a statement acknowledging the company's
-            registration status. This should include a placeholder for a generic
-            location and a fictitious <br className="hidden md:inline" />{" "}
-            registration number, for example, "Registered in [Location], USA
-            (No. XX-123456)". The text should mention the company's
-            authorization under a relevant state-level oversight department,
-            citing a specific act <br className="hidden md:inline" /> and
-            including a placeholder for the license number. Mention the
-            company's authorization under a specific state department, citing a
-            relevant act.
+            RenCom is committed to Sustainable Development Goal 7. In line with
+            Target 7.1, we expand universal access to modern energy services
+            through off-grid and home solar systems as well as mini-grids,
+            supporting communities where the grid is absent. Aligned with Target
+            7.2, our emphasis on solar and clean cooking technologies increases
+            the share of renewable energy and advances the global shift toward
+            sustainability
           </p>
         </div>
 
