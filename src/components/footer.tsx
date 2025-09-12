@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B2E15] mt-40 py-8">
+    <footer className="bg-[#0B2E15] mt-0 py-8">
       <div className="px-2 max-w-screen-xl mx-auto">
         <hr className="border-none h-[0.5px] mt-10 bg-[#134E24] mb-6" />
 
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
 
         <div
-          className="text-center font-geist font-extrabold tracking-tight bg-clip-text text-transparent px-4"
+          className="text-center mt-10 font-geist font-extrabold tracking-tight bg-clip-text text-transparent px-4 overflow-x-auto"
           style={{
             backgroundImage: "linear-gradient(to right, #087B37, #7ADC51)",
             WebkitBackgroundClip: "text",
@@ -79,7 +79,7 @@ const Footer = () => {
             backgroundPosition: "center",
           }}
         >
-          <p className="text-[100px] sm:text-[150px] md:text-[280px] leading-none break-words">
+          <p className="text-[80px] sm:text-[120px] md:text-[280px] leading-none whitespace-nowrap">
             RENCOM
           </p>
         </div>
