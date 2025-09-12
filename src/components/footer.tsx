@@ -14,8 +14,8 @@ const Footer = () => {
               <div className="flex-col gap-4">
                 <img
                   className="mt-15"
-                  src="/assets/icons/logo-textless.svg"
-                  alt="logo-plain"
+                  src="/assets/icons/logo-light.svg"
+                  alt="logo"
                 />
                 <p className="text-sm mt-8">© Copyright RenCom</p>
               </div>
