@@ -14,7 +14,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body className="bg-[#EEEDE4] min-h-screen overflow-x-hidden">
+      <HeaderDark />
+        {children}
+        </body>
     </html>
   );
 }
