@@ -1,17 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
 import Image from "next/image";
-
-const slides = [
-  { image: "/assets/images/man-windmill.png" },
-  { image: "/assets/images/windmills.png" },
-  { image: "/assets/images/Bush.png" },
-  { image: "/assets/images/windmills2.png" },
-  { image: "/assets/images/solar-mini-grids.png" },
-  { image: "/assets/images/man-windmill.png" },
-  { image: "/assets/images/windmills.png" },
-  { image: "/assets/images/Bush.png" },
-];
+import { useState, useEffect } from "react";
+import { auto_slides } from "@/utils/store";
 
 export default function AutoCarousel() {
   const [start, setStart] = useState(0);
@@ -20,7 +10,7 @@ export default function AutoCarousel() {
   // Auto-slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setStart((prev) => (prev + 1 >= slides.length ? 0 : prev + 1));
+      setStart((prev) => (prev + 1 >= auto_slides.length ? 0 : prev + 1));
     }, 3000); // 3 seconds
     return () => clearInterval(interval);
   }, []);
@@ -42,11 +32,13 @@ export default function AutoCarousel() {
             className="flex gap-1 transition-transform duration-1000 ease-in-out"
             style={{
               transform: `translateX(-${start * cardWidth}px)`,
-            }}>
-            {slides.map((slide, idx) => (
+            }}
+          >
+            {auto_slides.map((slide, idx) => (
               <div
                 key={idx}
-                className="w-[380px] h-[420px] flex-shrink-0 rounded-xl overflow-hidden relative">
+                className="w-[380px] h-[420px] flex-shrink-0 rounded-xl overflow-hidden relative"
+              >
                 <Image
                   src={slide.image}
                   alt="sliderImages"

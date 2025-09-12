@@ -146,19 +146,21 @@ const Home = () => {
       <section className="h-screen w-full flex flex-col items-center ">
         <div className=" w-[80%] flex justify-start pt-20 pl-2">
           <div className="sm:w-[35%] w-full flex flex-col ">
-            <div>
-              <div className="w-[8px] h-[8px] rounded-full"></div>
+            <div className="flex items-center gap-2 mb-2">
+              <div className="w-[8px] h-[8px] bg-[#30303070] rounded-full" />
               <h2>RenCom</h2>
             </div>
             <p className=" text-[38px] font-normal ">What We Offer</p>
-            <p className="text-[16px] font-light leading-[26px]">
+            <p className="text-[16px] text-[#383838CC] font-light leading-[26px]">
               Innovative, affordable, and <span>people-centered </span>
               approaches to Africa’s energy transition.
             </p>
           </div>
         </div>
 
-        <Carousel />
+        <div className="mb-32">
+          <Carousel />
+        </div>
       </section>
     </div>
   );
