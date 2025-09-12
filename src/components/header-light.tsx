@@ -20,7 +20,6 @@ const HeaderLight = () => {
     <nav className="mt-9">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
               <img
@@ -32,7 +31,6 @@ const HeaderLight = () => {
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl">
             <div className="flex items-baseline space-x-8">
               <Link
@@ -62,7 +60,6 @@ const HeaderLight = () => {
             </div>
           </div>
 
-          {/* Contact Button & Hamburger */}
           <div className="flex items-center md:space-x-4">
             <button
               className="bg-[#387F1A] hover:bg-[#25610c] text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 cursor-pointer hidden md:block"
@@ -71,7 +68,6 @@ const HeaderLight = () => {
               Contact Us →
             </button>
 
-            {/* Hamburger Icon (Mobile only) */}
             <div className="md:hidden">
               <button
                 onClick={toggleMobileMenu}
@@ -88,7 +84,6 @@ const HeaderLight = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 bg-white rounded-xl shadow-md py-4 px-6 space-y-4">
             <Link
