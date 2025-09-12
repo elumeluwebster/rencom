@@ -5,19 +5,17 @@ import { auto_slides } from "@/utils/store";
 
 export default function AutoCarousel() {
   const [start, setStart] = useState(0);
-  const cardWidth = 360 + 16; // width + gap
+  const cardWidth = 360 + 16;
 
-  // Auto-slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setStart((prev) => (prev + 1 >= auto_slides.length ? 0 : prev + 1));
-    }, 3000); // 3 seconds
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="w-full flex justify-center items-center my-10 z-20 relative">
-      {/* spiral */}
       <Image
         src="/assets/icons/spirals.svg"
         alt="sliderImages"
@@ -25,7 +23,6 @@ export default function AutoCarousel() {
         height={200}
         className=" absolute -z-10 top-[-170px] right-30 hidden sm:block"
       />
-      {/* Green container centered */}
       <div className="w-[90%] bg-[#014715] flex justify-center rounded-[18px] p-3 ">
         <div className="overflow-hidden px-2">
           <div

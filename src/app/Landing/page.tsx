@@ -7,27 +7,22 @@ const Landing = () => {
   return (
     <div>
       <section className="relative bg-[url('/assets/images/windmill-landing.png')] bg-cover bg-center bg-no-repeat h-screen w-full">
-        {/* Header fixed at the top */}
         <div className="absolute top-0 left-0 w-full">
           <HeaderLight />
         </div>
 
-        {/* Hero Text centered */}
         <div className="flex h-full w-full flex-col items-center justify-center text-center px-4">
-          {/* Hero Title */}
           <h2 className="text-[73px] text-white leading-[83px] font-bold">
             Sustainable Energy <br />
             Solutions
           </h2>
 
-          {/* Paragraph */}
           <p className="mt-6 max-w-2xl text-white text-lg">
             Based in Nigeria, RenCom is dedicated to delivering dependable,
             sustainable power solutions for communities and businesses, enabling
             economic growth and resilient development.
           </p>
 
-          {/* Buttons */}
           <div className="mt-8 flex gap-3">
             <button className="bg-[#E1FCAD] p-2 rounded-[30px] hover:bg-[#122023] text-black">
               Start a Project
@@ -43,14 +38,12 @@ const Landing = () => {
           </div>
         </div>
 
-        {/* Scroll Down Text at Bottom Center */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
           <p className="text-[18px] text-white">Scroll Down</p>
         </div>
       </section>
 
       <section className="h-screen w-full flex flex-col items-center justify-center bg-[#D8E4CA]">
-        {/* Group for paragraph + header */}
         <div className="flex flex-col items-center w-[80%] text-center">
           <p className="text-gray-600">
             Powering Inclusive & Sustainable Energy Access
@@ -66,11 +59,9 @@ const Landing = () => {
             Why It Matters
           </p>
         </div>
-        {/* Bigger div beneath */}
+
         <div className="mt-10 w-full sm:w-full md:w-[60%] h-[450px] bg-[#D8E4CA] flex flex-col sm:flex-row gap-3 rounded-[18px] p-2">
-          {/* Left */}
           <div className="flex sm:w-[44%] md:w-[44%] lg:w-[44%] w-full flex-row sm:flex-col md:flex-col lg:flex-col gap-3">
-            {/* Top box */}
             <div className="flex-1 relative px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#C4D6B0]">
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-white font-bold">
                 1
@@ -90,7 +81,6 @@ const Landing = () => {
               />
             </div>
 
-            {/* Bottom box */}
             <div className="flex-1 px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#0B2520]">
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-white font-bold">
                 2
@@ -103,10 +93,7 @@ const Landing = () => {
             </div>
           </div>
 
-          {/* Right */}
-
           <div className="flex-1 h-full rounded-[18px] p-2 bg-[#A4C085] relative flex items-center justify-start">
-            {/* Image */}
             <div className="w-[60%] h-full">
               <Image
                 src="/assets/images/clean-cooking-solutions.png"
@@ -117,13 +104,11 @@ const Landing = () => {
               />
             </div>
 
-            {/* Overlapping box */}
             <div className="absolute bottom-[4%]  left-[70px] bg-white rounded-lg shadow-lg w-[80%] p-4 flex flex-col gap-3">
-              {/* Number ball */}
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-white font-bold">
                 3
               </div>
-              {/* Description */}
+
               <p className="text-gray-800 text-sm leading-5">
                 Across Sub-Saharan Africa, nearly 600 million people lack
                 electricity access, and the World Bank’s Mission 300 aims to
@@ -134,7 +119,6 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      {/* we love women section */}
 
       <section className="bg-[url('/assets/images/2-girls.png')] bg-cover bg-center bg-no-repeat h-[70vh] w-full flex flex-col justify-center items-center mt-60 sm:mt-0 md:mt-0 lg:mt-0">
         <div className="flex h-full w-[80%] flex-col items-center justify-center text-center px-4">
