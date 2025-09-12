@@ -21,6 +21,7 @@ export default function RootLayout({
         <body className="bg-[#EEEDE4]">
           {/* <HeaderLight /> */}
           {children}
+          <Footer />
         </body>
       </html>
     </>
