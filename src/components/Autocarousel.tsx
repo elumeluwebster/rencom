@@ -1,0 +1,63 @@
+"use client";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+
+const slides = [
+  { image: "/assets/images/man-windmill.png" },
+  { image: "/assets/images/windmills.png" },
+  { image: "/assets/images/Bush.png" },
+  { image: "/assets/images/windmills2.png" },
+  { image: "/assets/images/solar-mini-grids.png" },
+  { image: "/assets/images/man-windmill.png" },
+  { image: "/assets/images/windmills.png" },
+  { image: "/assets/images/Bush.png" },
+];
+
+export default function AutoCarousel() {
+  const [start, setStart] = useState(0);
+  const cardWidth = 360 + 16; // width + gap
+
+  // Auto-slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStart((prev) => (prev + 1 >= slides.length ? 0 : prev + 1));
+    }, 3000); // 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="w-full flex justify-center items-center my-10 z-20 relative">
+      {/* spiral */}
+      <Image
+        src="/assets/icons/spirals.svg"
+        alt="sliderImages"
+        width={300}
+        height={200}
+        className=" absolute -z-10 top-[-170px] right-30 hidden sm:block"
+      />
+      {/* Green container centered */}
+      <div className="w-[90%] bg-[#014715] flex justify-center rounded-[18px] p-3 ">
+        <div className="overflow-hidden px-2">
+          <div
+            className="flex gap-1 transition-transform duration-1000 ease-in-out"
+            style={{
+              transform: `translateX(-${start * cardWidth}px)`,
+            }}>
+            {slides.map((slide, idx) => (
+              <div
+                key={idx}
+                className="w-[380px] h-[420px] flex-shrink-0 rounded-xl overflow-hidden relative">
+                <Image
+                  src={slide.image}
+                  alt="sliderImages"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

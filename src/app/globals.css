@@ -6,6 +6,11 @@
   font-weight: 200;
   font-style: italic;
 }
+/* globals.css */
+html,
+body {
+  overflow-x: hidden;
+}
 
 /* :root {
 	--font-geist-mono: "Geist Mono", monospace;
