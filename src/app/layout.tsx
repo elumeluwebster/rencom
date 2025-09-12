@@ -1,12 +1,14 @@
 import HeaderLight from "@/components/header-light";
 import HeaderDark from "@/components/header-dark";
+import Footer from "@/components/footer";
 import "./globals.css";
 
-export default function RootLayout({
+export default function RootLayout ( {
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}> )
+{
   return (
     <>
       <html lang="en">
@@ -21,6 +23,7 @@ export default function RootLayout({
           {/* <HeaderLight /> */}
           {children}
         </body>
+      </html>
       </html>
     </>
   );

@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+.newsreader-light {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+}
+
 /* :root {
 	--font-geist-mono: "Geist Mono", monospace;
 	--font-newsreader: "Newsreader", serif;
