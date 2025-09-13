@@ -13,19 +13,19 @@ const Landing = () => {
         </div>
 
         <div className="flex h-full w-full flex-col items-center justify-center text-center px-4">
-          <h2 className="text-[73px] text-white leading-[83px] font-bold">
-            Sustainable Energy <br />
-            Solutions
+          <h2 className="text-[73px] text-white leading-[83px] font-normal font-newsreader  ">
+            Sustainable <br />
+            Energy Solutions
           </h2>
 
-          <p className="mt-6 max-w-2xl text-white text-lg">
+          <p className="mt-6 max-w-2xl text-[#F2F2F2] font-light font-justmeagaindownhere ">
             Based in Nigeria, RenCom is dedicated to delivering dependable,
-            sustainable power solutions for communities and businesses, enabling
-            economic growth and resilient development.
+            sustainable <br /> power solutions for communities and businesses,
+            enabling economic growth <br /> and resilient development.
           </p>
 
           <div className="mt-8 flex gap-1.5">
-            <button className="bg-[#E1FCAD] px-6 py-2 rounded-[30px] hover:bg-[#0B2520] hover:text-[#fff] cursor-pointer">
+            <button className="bg-[#E1FCAD] text-[#122023] px-6 py-2 rounded-[30px] hover:bg-[#0B2520] hover:text-[#fff] cursor-pointer font-Geist ">
               Explore More
             </button>
             <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300">
