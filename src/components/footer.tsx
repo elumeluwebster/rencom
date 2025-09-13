@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="px-2 max-w-screen-xl mx-auto">
         <hr className="border-none h-[0.5px] mt-10 bg-[#134E24] mb-6" />
 
-        <div className="flex flex-col md:flex-row justify-between items-start gap-10 px-3 md:px-28 pb-12">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-16 px-3 md:px-0 pb-12">
           <div className="text-[#fefefb] font-geist font-light text-3xl md:text-4xl max-w-full md:max-w-xl">
             Sustainable <br />
             <p className="font-newsreader italic">Energy Solutions</p>
@@ -22,10 +22,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row w-full md:w-2/3 gap-6 bg-[#0F3D1C] rounded-lg p-6 md:p-8">
+          <div className="flex flex-col md:flex-row w-full md:w-2/3 gap-6 bg-[#0F3D1C] rounded-3xl p-6 md:p-8">
             <div className="flex-1 flex flex-col justify-center">
-              <h3 className="text-[#fefefb] font-light font-geist text-lg md:text-xl mb-4 md:mb-6 leading-snug">
-                Need us to reach out? Leave your email
+              <h3 className="text-[#fefefb] font-extralight font-geist text-lg md:text-xl mb-4 md:mb-6 leading-snug">
+                Need to talk about sustainable energy? Please leave your mail
+                and we’ll contact you.
               </h3>
               <input
                 type="email"
