@@ -1,5 +1,5 @@
 import React from "react";
-import { FiChevronRight } from "react-icons/fi";
+
 import { aboutData } from "@/utils/store";
 
 import HeaderDark from "@/components/header-dark";
@@ -10,7 +10,6 @@ const OurStory = () => {
       <HeaderDark />
       <div className="mt-24">
         <section className="min-h-screen w-full flex flex-col gap-30">
-          {/* hero text  */}
           <div className="text-center flex flex-col items-center gap-4">
             <h2 className="font-normal tracking-tighter text-[60px] sm:text-[40px] xs:text-[28px] font-newsreader leading-[60px] sm:leading-[44px] xs:leading-[32px]">
               Our Story
@@ -22,18 +21,19 @@ const OurStory = () => {
               solutions that transform lives.
             </p>
 
-            <div className="min-w-[150px] flex items-center px-4 py-2.5  border border-[#aaaaa9] rounded-[32px]  cursor-pointer">
-              <div className="relative w-[65px] h-[46px] rounded-full overflow-hidden">
+            <div className="min-w-[120px] flex items-center px-2 py-1.5 border border-[#aaaaa9] rounded-[24px] cursor-pointer">
+              <div className="relative w-[45px] h-[32px] rounded-full overflow-hidden">
                 <div
                   className="w-full h-full bg-cover bg-center"
                   style={{
                     backgroundImage: "url('/assets/images/malwena.png')",
-                  }}></div>
-                <div className="absolute bottom-[10%] right-[5%] w-4 h-4 bg-[#B6E400] rounded-full  border-white border-2 z-10"></div>
+                  }}
+                />
+                <div className="absolute bottom-[8%] right-[4%] w-3 h-3 bg-[#B6E400] rounded-full border-white border-2 z-10" />
               </div>
 
-              <span className="ml-3 text-[#1A1A17] font-light text-[15px]">
-                Book a call{" "}
+              <span className="ml-2 text-[#1A1A17] font-light text-[13px]">
+                Book a call
               </span>
             </div>
           </div>
@@ -82,10 +82,10 @@ const OurStory = () => {
       sm:basis-[calc(50%-0.5rem)] sm:h-[450px]`}
                 style={{
                   backgroundImage: `url('/assets/images/sustainable${items.num}.png')`,
-                }}>
+                }}
+              >
                 <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-                {/* Text container */}
                 <div className="relative z-10 w-full text-white p-3 mt-auto transition-all duration-400 group-hover:-translate-y-4 flex flex-col justify-end h-full">
                   <div className="w-fit">
                     <p className="inline-block text-[26px] text-[#a4a0a0] font-bold font-anton transition-colors duration-300 group-hover:bg-black group-hover:text-white group-hover:p-2 rounded">
@@ -95,7 +95,8 @@ const OurStory = () => {
 
                   <div
                     className="flex items-start gap-2 mt-1 opacity-0 max-h-0 overflow-hidden 
-        transition-all duration-300 group-hover:opacity-100 group-hover:max-h-28">
+        transition-all duration-300 group-hover:opacity-100 group-hover:max-h-28"
+                  >
                     <div className="w-2 bg-green-500 h-full rounded-full"></div>
 
                     <p className="text-[12px] text-[#F4F3EA] max-w-[50%]">
@@ -106,52 +107,6 @@ const OurStory = () => {
               </div>
             ))}
           </div>
-
-          {/* <div className="flex flex-wrap gap-4 w-full px-4 mb-20">
-            <div
-              className="flex-1 basis-[calc(50%-0.5rem)] h-[450px] rounded-2xl overflow-hidden bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/assets/images/sustainable1.png')",
-              }}
-            />
-
-            <div
-              className="flex-1 basis-[calc(50%-0.5rem)] h-[450px] rounded-2xl overflow-hidden bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/assets/images/sustainable2.png')",
-              }}
-            />
-
-            <div
-              className="flex-1 basis-[calc(50%-0.5rem)] h-[450px] rounded-2xl overflow-hidden bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/assets/images/sustainable3.png')",
-              }}
-            />
-
-            <div
-              className="flex-1 basis-[calc(50%-0.5rem)] h-[450px] rounded-2xl overflow-hidden bg-cover bg-center flex justify-end items-end p-4"
-              style={{
-                backgroundImage: "url('/assets/images/sustainable4.png')",
-              }}
-            >
-              <div className="flex gap-1 items-center">
-                <p className="text-[14px] leading-[20px] text-[#F4F3EA]">
-                  {" "}
-                  Be a Partner
-                </p>
-                <button className="w-12 h-12 flex items-center justify-center bg-[#B6E400] rounded-full transition-colors duration-300">
-                  <Image
-                    src="/assets/icons/rightArrow.svg"
-                    width={40}
-                    height={40}
-                    alt=""
-                    className="cursor-pointer mt-4"
-                  />
-                </button>
-              </div>
-            </div>
-          </div> */}
         </section>
       </div>
     </>
@@ -159,13 +114,3 @@ const OurStory = () => {
 };
 
 export default OurStory;
-{
-  /* <div className="flex gap-1 items-center bg-black bg-opacity-30 p-2 rounded">
-                      <p className="text-[14px] leading-[20px] text-[#F4F3EA]">
-                        Be a Partner
-                      </p>
-                      <button className="w-8 h-8 flex items-center justify-center bg-[#B6E400] rounded-full transition-colors duration-300">
-                        <FiChevronRight />
-                      </button>
-                    </div> */
-}
