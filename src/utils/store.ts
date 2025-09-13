@@ -9,7 +9,7 @@ export const collapsibles = [
     icon: "/assets/icons/commitment.svg",
     title: "Commitment to global and national goals",
     content:
-      "We are deeply committed to the UN’s vision of SDG 7 to ensure access to affordable, reliable, sustainable and modern energy for all . We are also aligned with Nigeria’s Energy Transition Plan, bridging the gap to net-zzero by 2060 via decentralized renewable approaches.",
+      "We are deeply committed to the UN’s vision of SDG 7 to ensure access to affordable, reliable, sustainable and modern energy for all . We are also aligned with Nigeria’s Energy Transition Plan, bridging the gap to net-zero by 2060 via decentralized renewable approaches.",
   },
   {
     icon: "/assets/icons/africa.svg",

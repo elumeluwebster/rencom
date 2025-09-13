@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import HeaderLight from "@/components/header-light";
 
 import { collapsibles } from "@/utils/store";
@@ -7,11 +7,12 @@ import { useRouter } from "next/navigation";
 
 export default function About() {
   const router = useRouter();
+  const nextSectionRef = useRef<HTMLDivElement>(null);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   const handleClick = () => {
-    router.push("#");
+    nextSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -22,10 +23,10 @@ export default function About() {
         </div>
 
         <div className="absolute text-white mb-10 px-20 bottom-0 left-0 justify-start">
-          <div className="flex flex-col"></div>
-
-          <h2 className="font-newsreader text-8xl py-2">About Us</h2>
-          <p className="mt-4 font-light">
+          <h2 className="font-newsreader tracking-tighter font-light text-8xl py-2">
+            About Us
+          </h2>
+          <p className="mt-4 font-extralight font-geist">
             We combine innovation, impact, and sustainability to deliver energy
             <br />
             solutions that transform lives and protect the planet.
@@ -50,13 +51,13 @@ export default function About() {
         </div>
       </section>
 
-      <div className="mt-24 px-4 sm:px-6 md:px-28 pb-24">
+      <div ref={nextSectionRef} className="mt-24 px-4 sm:px-6 md:px-28 pb-24">
         <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 mt-12 mb-20">
           <div className="w-full md:w-1/2">
             <img
               src="/assets/images/engineer.png"
               alt="image of an engineer"
-              className="w-full h-auto rounded-lg shadow-md"
+              className="w-full h-auto rounded-lg"
             />
           </div>
           <div className="w-full md:w-1/2 space-y-18 flex flex-col">
@@ -72,10 +73,12 @@ export default function About() {
                 <br className="hidden sm:block" />
                 Transition
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                To be a key driver of Nigeria’s energy transition and Africa's
+              <p className="text-gray-700 font-extralight text-sm sm:text-base leading-8">
+                To be a key driver of Nigeria’s energy transition and Africa's{" "}
+                <br />
                 electrification, delivering equitable, sustainable power
-                solutions that support thriving communities and economies.
+                solutions that <br /> support thriving communities and
+                economies.
               </p>
             </div>
 
@@ -90,11 +93,12 @@ export default function About() {
                 To Empower Communities <br className="hidden sm:block" />
                 and Businesses Across Africa
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                To empower communities and businesses across Nigeria with
+              <p className="text-gray-700 font-extralight text-sm sm:text-base leading-8">
+                To empower communities and businesses across Nigeria with <br />
                 reliable, clean energy, through both grid-integrated and
-                off-grid solutions, aligned with national and international
-                commitments for inclusive, sustainable electrification.
+                off-grid <br /> solutions, aligned with national and
+                international commitments for <br /> inclusive, sustainable
+                electrification.
               </p>
             </div>
           </div>
@@ -141,7 +145,7 @@ export default function About() {
                   </span>
                 </button>
                 {openIndex === i && (
-                  <div className="px-8 pb-4 text-sm text-gray-600">
+                  <div className="px-14 pb-4 justify-center text-sm text-gray-600">
                     {item.content}
                   </div>
                 )}
