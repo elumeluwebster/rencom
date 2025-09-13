@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 
+import CustomSelect from "@/components/custom-select";
 import HeaderDark from "@/components/header-dark";
-import Image from "next/image";
 
 export default function Contact() {
+  const [reason, setReason] = React.useState<string>("");
   return (
     <>
       <HeaderDark />
@@ -17,7 +19,7 @@ export default function Contact() {
                 Change Together{" "}
               </h2>
 
-              <p className="text-[16px] text-[#000000] font-light leading-[30px]">
+              <p className="text-[16px] text-[#000000] font-extralight leading-[30px]">
                 We collaborate with investors, NGOs, governments, and <br />
                 communities to accelerate clean energy adoption. Partner <br />
                 with us to create lasting impact for people and the planet.
@@ -41,13 +43,12 @@ export default function Contact() {
                     </p>
                   </div>
                   <div className="flex-1 rounded-[32px]">
-                    <Image
+                    <img
                       src="/assets/images/malwena.png"
-                      width={100}
+                      width={80}
                       height={100}
-                      objectFit="cover"
                       alt="malwana picture"
-                      className="rounded-[32px]"
+                      className="rounded-[32px] object-cover"
                     />
                   </div>
                 </div>
@@ -62,37 +63,33 @@ export default function Contact() {
                 </h3>
                 <form className="space-y-6 sm:space-y-8">
                   <label className="block">
-                    <span className="block mb-2 text-[14px] font-normal text-[#1A1A17]">
-                      Full Name
+                    <span className="block mb-2 text-[14px] font-extralight text-[#1A1A17]">
+                      FULL NAME
                     </span>
                     <input
                       type="text"
                       placeholder="Your name here"
-                      className="w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA]"
+                      className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                     />
                   </label>
 
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <label className="block">
-                      <span className="block mb-2 text-[14px] font-normal text-[#1A1A17]">
-                        Email{" "}
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <label className="block w-full sm:w-1/2">
+                      <span className="block mb-2 text-[14px] font-extralight text-[#1A1A17]">
+                        EMAIL
                       </span>
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA]"
+                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                       />
                     </label>
 
-                    <label className="block">
-                      <span className="block mb-2 text-[14px] font-normal text-[#1A1A17]">
-                        Partnership Goal{" "}
+                    <label className="block w-full sm:w-1/2">
+                      <span className="block mb-2 text-[14px] font-geist font-extralight text-[#1A1A17]">
+                        SELECT REASON
                       </span>
-                      <input
-                        type="text"
-                        placeholder="Select a goal"
-                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded  resize-none bg-[#F4F3EA] text-black"
-                      />
+                      <CustomSelect value={reason} onChange={setReason} />
                     </label>
                   </div>
 
@@ -102,15 +99,15 @@ export default function Contact() {
                     </span>
                     <textarea
                       placeholder="Type your message here..."
-                      className="w-full p-3 border border-[#EDEDED]  resize-none bg-[#F4F3EA] text-black  rounded-[16px]"
-                      rows={8}
+                      className="w-full p-3 border border-[#EDEDED] resize-none bg-[#F4F3EA] text-black rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                      rows={10}
                     ></textarea>
                   </label>
 
                   <label className="flex items-center w-full space-x-2">
                     <input
                       type="checkbox"
-                      className="mt-1 h-5 w-5 text-green-600 border-gray-300 rounded-[8px] focus:ring-green-500"
+                      className="mt-1 h-5 w-5 accent-[#B6E400] border-gray-300 cursor-pointer rounded-[8px] focus:ring-[#0F3D1C] focus:border-[#0F3D1C]"
                     />
                     <span className="text-[12px] font-normal text-[#1A1A17]">
                       I agree to let RenCom securely store my details for
@@ -118,7 +115,7 @@ export default function Contact() {
                     </span>
                   </label>
                   <div className="flex justify-between items-center">
-                    <p className="w-[40%] text-[12px] font-light">
+                    <p className="w-[40%] text-[12px] font-extralight">
                       You’ll hear from us within 1–2 days. <br />
                       We’re excited to connect!
                     </p>

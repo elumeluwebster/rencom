@@ -68,3 +68,11 @@ export const auto_slides = [
   { image: "/assets/images/windmills.png" },
   { image: "/assets/images/Bush.png" },
 ];
+
+export const options = [
+  { value: "", label: "Select reason" },
+  { value: "partnership", label: "Partnership" },
+  { value: "investment", label: "Investment" },
+  { value: "collaboration", label: "Collaboration" },
+  { value: "other", label: "Other" },
+];
