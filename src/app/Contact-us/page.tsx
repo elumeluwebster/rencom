@@ -25,6 +25,51 @@ export default function Contact() {
                 with us to create lasting impact for people and the planet.
               </p>
 
+              <div className="flex flex-row items-center gap-4 mt-4">
+                <a href="#">
+                  <img
+                    src="/assets/icons/gmail.svg"
+                    alt="Gmail"
+                    className="h-12 w-12"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/assets/icons/youtube.svg"
+                    alt="YouTube"
+                    className="h-12 w-12"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/assets/icons/twitter.svg"
+                    alt="Twitter"
+                    className="h-12 w-12"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/assets/icons/instagram.svg"
+                    alt="Instagram"
+                    className="h-12 w-12"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/assets/icons/facebook.svg"
+                    alt="Facebook"
+                    className="h-12 w-12"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/assets/icons/linkedin.svg"
+                    alt="LinkedIn"
+                    className="h-12 w-12"
+                  />
+                </a>
+              </div>
+
               <div className=" w-full md:w-[50%] flex flex-col   gap-4 rounded-[16px] p-2 bg-[#3F403C] mt-8">
                 <div className="flex gap-2">
                   <img src="/assets/icons/star.svg" alt="" />
@@ -136,12 +181,12 @@ export default function Contact() {
           <img
             src="/assets/images/topographic.png"
             alt=""
-            className="hidden md:block absolute left-0 -bottom-24 pointer-events-none select-none w-[400px] h-auto"
+            className="hidden md:block absolute left-0 -bottom-24 pointer-events-none select-none w-[400px] h-[240px] object-cover object-top overflow-hidden"
           />
         </section>
 
-        <section className="bg-[#D8E4CA] w-full py-16 px-4 sm:px-6 md:px-28">
-          <div className="flex flex-col md:flex-row gap-12 md:gap-20">
+        <section className="bg-[#D8E4CA] w-full py-36 px-4 sm:px-6 md:px-28">
+          <div className="flex flex-col md:flex-row gap-12 md:gap-20 px-10 md:px-4">
             <div className="flex-1">
               <p className="text-[#0F3D1C] text-lg sm:text-xl font-base">
                 Contact Us
