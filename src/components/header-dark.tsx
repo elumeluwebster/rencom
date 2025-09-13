@@ -40,12 +40,6 @@ const HeaderDark = () => {
                 About Us
               </Link>
               <Link
-                href="/services"
-                className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
-              >
-                Services
-              </Link>
-              <Link
                 href="/projects-impact"
                 className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
               >
@@ -91,12 +85,6 @@ const HeaderDark = () => {
               className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
             >
               About Us
-            </Link>
-            <Link
-              href="/services"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
-            >
-              Services
             </Link>
             <Link
               href="/projects-impact"

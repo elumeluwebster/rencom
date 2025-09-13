@@ -24,7 +24,7 @@ export default function About() {
         <div className="absolute text-white mb-10 px-20 bottom-0 left-0 justify-start">
           <div className="flex flex-col"></div>
 
-          <h2 className="text-newsreader text-8xl py-2">About Us</h2>
+          <h2 className="font-newsreader text-8xl py-2">About Us</h2>
           <p className="mt-4 font-light">
             We combine innovation, impact, and sustainability to deliver energy
             <br />
