@@ -86,14 +86,14 @@ const OurStory = () => {
               >
                 {num === 4 && (
                   <div className="flex justify-end items-end p-4 h-full w-full">
-                    <div className="flex gap-1 items-center bg-black bg-opacity-30 p-2 rounded">
+                    {/* <div className="flex gap-1 items-center bg-black bg-opacity-30 p-2 rounded">
                       <p className="text-[14px] leading-[20px] text-[#F4F3EA]">
                         Be a Partner
                       </p>
                       <button className="w-8 h-8 flex items-center justify-center bg-[#B6E400] rounded-full transition-colors duration-300">
                         <FiChevronRight />
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 )}
               </div>
