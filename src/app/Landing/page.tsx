@@ -12,7 +12,7 @@ const Landing = () => {
         </div>
 
         <div className="flex h-full w-full flex-col items-center justify-center text-center px-4">
-          <h2 className="text-[73px] text-white leading-[83px] font-bold">
+          <h2 className="text-[73px] text-white leading-[83px] font-bold font-lobster ">
             Sustainable Energy <br />
             Solutions
           </h2>
