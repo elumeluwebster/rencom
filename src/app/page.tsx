@@ -20,24 +20,30 @@ const Landing = () => {
 
   return (
     <div>
-      <section className="relative bg-[url('/assets/images/windmill-landing.png')] bg-cover bg-center bg-no-repeat h-screen w-full">
+      <section className="relative bg-[url('/assets/images/engineers-landing.png')] bg-cover bg-[#EEEDE4] bg-center bg-no-repeat h-screen w-full">
         <div className="absolute top-0 left-0 w-full">
           <HeaderLight />
         </div>
 
         <div className="flex h-full w-full flex-col items-center justify-center text-center px-4">
           <h2 className="text-[73px] font-geist font-normal text-white leading-[83px]">
-            Sustainable <br /> Energy Solutions
+            Sustainable <br />{" "}
+            <span className="font-newsreader tracking-tighter italic font-light">
+              Energy Solutions
+            </span>
           </h2>
 
-          <p className="font-geist font-extralight mt-6 max-w-2xl text-white text-lg">
+          <p className="font-geist font-extralight mt-6 max-w-2xl text-[#F2F2F2] text-lg">
             Based in Nigeria, RenCom is dedicated to delivering dependable,
             sustainable <br /> power solutions for communities and businesses,
             enabling economic growth <br /> and resilient development.
           </p>
 
-          <div className="mt-8 flex gap-1.5">
-            <div className="bg-[#E1FCAD] px-6 py-3 rounded-[30px]">
+          <div className="mt-13 flex">
+            <div
+              onClick={handleClick}
+              className="bg-[#E1FCAD] px-6 py-3 rounded-[30px] cursor-pointer"
+            >
               Explore More
             </div>
             <button
@@ -64,11 +70,11 @@ const Landing = () => {
         ref={nextSectionRef}
         className="min-h-screen w-full py-16 flex flex-col items-center justify-center bg-[#D8E4CA]"
       >
-        <div className="flex flex-col items-center w-[80%] text-center mb-8">
-          <p className="text-gray-600 font-geist font-medium">
+        <div className="flex flex-col items-center w-[80%] text-center mb-8 mt-24">
+          <p className="text-[#0F3D1C] font-geist font-medium">
             Powering Inclusive & Sustainable Energy Access
           </p>
-          <h2 className="text-[28px] sm:text-[40px] font-extralight font-geist w-full sm:w-[80%] text-center text-gray-800">
+          <h2 className="mt-6 text-[28px] sm:text-[40px] font-extralight font-geist w-full sm:w-[80%] text-center text-[#0F3D1C]">
             Driving{" "}
             <span className="font-newsreader italic tracking-tighter">
               Africa's Shift{" "}
