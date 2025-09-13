@@ -1,10 +1,12 @@
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         newsreader: ["Newsreader", "serif"],
+        lobster: ["var(--font-lobster)", "cursive"],
+
         geist: ["Geist", "sans-serif"],
         "geist-mono": ["Geist Mono", "monospace"],
       },
