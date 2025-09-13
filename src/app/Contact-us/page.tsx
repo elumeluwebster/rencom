@@ -54,6 +54,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+            {/* forms  */}
 
             <div className="flex-1">
               <div className="bg-[#E6E8DD] p-6 sm:p-8 rounded-2xl shadow-md">

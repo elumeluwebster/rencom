@@ -25,8 +25,8 @@ const Landing = () => {
 
           <p className="font-geist font-extralight mt-6 max-w-2xl text-white text-lg">
             Based in Nigeria, RenCom is dedicated to delivering dependable,
-            sustainable power solutions for communities and businesses, enabling
-            economic growth and resilient development.
+            sustainable <br /> power solutions for communities and businesses,
+            enabling economic growth <br /> and resilient development.
           </p>
 
           <div className="mt-8 flex gap-1.5">

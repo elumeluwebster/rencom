@@ -9,7 +9,7 @@ const HeaderLight = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleClick = () => {
-    router.push("/contact-us");
+    router.push("/Contact-us");
   };
 
   const toggleMobileMenu = () => {
