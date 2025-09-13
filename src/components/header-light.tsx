@@ -31,7 +31,7 @@ const HeaderLight = () => {
             </Link>
           </div>
 
-          <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl">
+          <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl font-normal font-questrial">
             <div className="flex items-baseline space-x-8">
               <Link
                 href="/home"
@@ -41,17 +41,20 @@ const HeaderLight = () => {
               </Link>
               <Link
                 href="/about-us"
-                className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200">
+                className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
+              >
                 About Us
               </Link>
               <Link
                 href="/projects-impact"
-                className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200">
+                className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
+              >
                 Projects & Impacts
               </Link>
               <Link
                 href="/our-story"
-                className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200">
+                className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
+              >
                 Our Story
               </Link>
             </div>
@@ -60,7 +63,8 @@ const HeaderLight = () => {
           <div className="flex items-center md:space-x-4">
             <button
               className="bg-[#387F1A] hover:bg-[#25610c] text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 cursor-pointer hidden md:block"
-              onClick={handleClick}>
+              onClick={handleClick}
+            >
               Contact Us →
             </button>
 
@@ -68,7 +72,8 @@ const HeaderLight = () => {
               <button
                 onClick={toggleMobileMenu}
                 className="text-gray-700 focus:outline-none"
-                aria-label="Toggle Menu">
+                aria-label="Toggle Menu"
+              >
                 {isMobileMenuOpen ? (
                   <HiX className="h-6 w-6" />
                 ) : (
@@ -83,22 +88,26 @@ const HeaderLight = () => {
           <div className="md:hidden mt-4 bg-white rounded-xl shadow-md py-4 px-6 space-y-4">
             <Link
               href="/about-us"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium">
+              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+            >
               About Us
             </Link>
             <Link
               href="/projects-impact"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium">
+              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+            >
               Projects & Impacts
             </Link>
             <Link
               href="/our-story"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium">
+              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+            >
               Our Story
             </Link>
             <Link
               href="/contact-us"
-              className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors ">
+              className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors"
+            >
               Contact Us
             </Link>
           </div>

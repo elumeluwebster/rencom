@@ -31,7 +31,7 @@ const HeaderDark = () => {
             </Link>
           </div>
 
-          <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl">
+          <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl font-regular font-questrial">
             <div className="flex items-baseline space-x-8">
               <Link
                 href="/home"
@@ -106,7 +106,7 @@ const HeaderDark = () => {
             </Link>
             <Link
               href="/contact-us"
-              className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors "
+              className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors"
             >
               Contact Us
             </Link>
