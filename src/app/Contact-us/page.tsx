@@ -53,6 +53,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+            {/* forms  */}
 
             <div className="flex-1">
               <div className="bg-[#E6E8DD] p-6 sm:p-8 rounded-2xl shadow-md">
@@ -68,7 +69,7 @@ export default function Contact() {
                     <input
                       type="text"
                       placeholder="Your name here"
-                      className="w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA]"
+                      className="w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA] focus:outline-none focus:border-[#387F1A]"
                     />
                   </label>
 
@@ -80,7 +81,7 @@ export default function Contact() {
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA]"
+                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA] focus:outline-none focus:border-[#387F1A]"
                       />
                     </label>
 
@@ -91,7 +92,7 @@ export default function Contact() {
                       <input
                         type="text"
                         placeholder="Select a goal"
-                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded  resize-none bg-[#F4F3EA] text-black"
+                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded  resize-none bg-[#F4F3EA] text-black focus:outline-none focus:border-[#387F1A]"
                       />
                     </label>
                   </div>
@@ -102,14 +103,14 @@ export default function Contact() {
                     </span>
                     <textarea
                       placeholder="Type your message here..."
-                      className="w-full p-3 border border-[#EDEDED]  resize-none bg-[#F4F3EA] text-black  rounded-[16px]"
+                      className="w-full p-3 border border-[#EDEDED]  resize-none bg-[#F4F3EA] text-black  rounded-[16px] focus:outline-none focus:border-[#387F1A]"
                       rows={8}></textarea>
                   </label>
 
                   <label className="flex items-center w-full space-x-2">
                     <input
                       type="checkbox"
-                      className="mt-1 h-5 w-5 text-green-600 border-gray-300 rounded-[8px] focus:ring-green-500"
+                      className="mt-1 h-5 w-5  border-gray-300 rounded-[8px] focus:ring-green-500 [accent-color:#387F1A]"
                     />
                     <span className="text-[12px] font-normal text-[#1A1A17]">
                       I agree to let RenCom securely store my details for

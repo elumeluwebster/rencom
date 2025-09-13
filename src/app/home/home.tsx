@@ -1,51 +1,37 @@
 import React from "react";
 import Image from "next/image";
 
-import HeaderLight from "@/components/header-light";
-import Carousel from "@/components/carousel";
+import AutoCarousel from "../../components/Autocarousel";
 
-const Landing = () => {
+import HeaderLight from "../../components/header-light";
+
+import Carousel from "../../components/carousel";
+
+const Home = () => {
   return (
     <div>
-      <section className="relative bg-[url('/assets/images/windmill-landing.png')] bg-cover bg-center bg-no-repeat h-screen w-full">
-        <div className="absolute top-0 left-0 w-full">
-          <HeaderLight />
-        </div>
-
-        <div className="flex h-full w-full flex-col items-center justify-center text-center px-4">
-          <h2 className="text-[73px] text-white leading-[83px] font-normal font-newsreader  ">
+      <HeaderLight />
+      <section className="min-h-screen w-full flex flex-col items-center py-4">
+        <div className="flex text-[40px] sm:text-[68px] sm:w-[40%] text-center leading-[74px] text-[#242424] p-3 font-light">
+          <h2>
             Sustainable <br />
-            Energy Solutions
+            <span>Energy Solutions</span>
           </h2>
-
-          <p className="mt-6 max-w-2xl text-[#F2F2F2] font-light font-justmeagaindownhere ">
-            Based in Nigeria, RenCom is dedicated to delivering dependable,
-            sustainable <br /> power solutions for communities and businesses,
-            enabling economic growth <br /> and resilient development.
-          </p>
-
-          <div className="mt-8 flex gap-1.5">
-            <button className="bg-[#E1FCAD] text-[#122023] px-6 py-2 rounded-[30px] hover:bg-[#0B2520] hover:text-[#fff] cursor-pointer font-Geist ">
-              Explore More
-            </button>
-            <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300">
-              <Image
-                src="/assets/icons/down-right-arrow.svg"
-                width={20}
-                height={20}
-                alt=""
-                className="cursor-pointer"
-              />
-            </button>
-          </div>
         </div>
-
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-          <p className="text-[18px] font-ptmono text-white">SCROLL DOWN</p>
-        </div>
+        <AutoCarousel />
+        <p className="text-center font-light text-[19px] my-8 leading-[28px] ">
+          Based in Nigeria, RenCom is dedicated to delivering dependable,
+          sustainable <br />
+          power solutions for communities and businesses, enabling economic{" "}
+          <br />
+          growth and resilient development.
+        </p>
+        <button className="bg-[#134E24] p-3 font-medium text-[14px] rounded-[30px] text-white my-4">
+          Explore Services →{" "}
+        </button>{" "}
       </section>
 
-      <section className="h-screen w-full flex flex-col items-center justify-center bg-[#D8E4CA]">
+      <section className="h-screen w-full mt-10 flex flex-col items-center justify-center bg-[#D8E4CA]">
         <div className="flex flex-col items-center w-[80%] text-center">
           <p className="text-gray-600">
             Powering Inclusive & Sustainable Energy Access
@@ -57,7 +43,7 @@ const Landing = () => {
         </div>
 
         <div className="w-full ml-20">
-          <p className="text-start font-justmeagaindownhere hidden sm:block md:hidden lg:block">
+          <p className=" text-start hidden sm:block md:hidden lg:block">
             Why It Matters
           </p>
         </div>
@@ -65,10 +51,10 @@ const Landing = () => {
         <div className="mt-10 w-full sm:w-full md:w-[60%] h-[450px] bg-[#D8E4CA] flex flex-col sm:flex-row gap-3 rounded-[18px] p-2">
           <div className="flex sm:w-[44%] md:w-[44%] lg:w-[44%] w-full flex-row sm:flex-col md:flex-col lg:flex-col gap-3">
             <div className="flex-1 relative px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#C4D6B0]">
-              <div className="flex ml-1 items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-white font-base">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-white font-bold">
                 1
               </div>
-              <p className="text-[#0F3D1C] text-[15px] leading-[24px] mt-2 px-2">
+              <p className="text-[#0F3D1C] text-[15px] leading-[24px] mt-2">
                 There is a huge access to energy challenge faced by Nigerians,
                 both from the availability and affordability perspectives.
                 Alternative solutions are neither healthy, affordable, nor
@@ -84,10 +70,10 @@ const Landing = () => {
             </div>
 
             <div className="flex-1 px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#0B2520]">
-              <div className="flex ml-1 items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-white font-base">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-white font-bold">
                 2
               </div>
-              <p className="text-white font-geist text-geist-regular text-[15px] mt-2 leading-[24px] px-2">
+              <p className="text-white text-[15px] mt-2 leading-[24px]">
                 Nigeria’s Energy Transition Plan targets carbon neutrality by
                 2060 while expanding modern energy access and decarbonizing key
                 sectors—aligning closely with RenCom’s approach.
@@ -98,7 +84,7 @@ const Landing = () => {
           <div className="flex-1 h-full rounded-[18px] p-2 bg-[#A4C085] relative flex items-center justify-start">
             <div className="w-[60%] h-full">
               <Image
-                src="/assets/images/storage.png"
+                src="/assets/images/clean-cooking-solutions.png"
                 alt="Clean Cooking Solutions"
                 width={200}
                 height={200}
@@ -106,12 +92,12 @@ const Landing = () => {
               />
             </div>
 
-            <div className="absolute bottom-[4%]  left-[70px] bg-[#C4D6B0] rounded-lg shadow-lg w-[80%] p-4 flex flex-col gap-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-[white] font-base">
+            <div className="absolute bottom-[4%]  left-[70px] bg-white rounded-lg shadow-lg w-[80%] p-4 flex flex-col gap-3">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0F3D1C] text-white font-bold">
                 3
               </div>
 
-              <p className="text-[#0F3D1C] text-sm leading-5">
+              <p className="text-gray-800 text-sm leading-5">
                 Across Sub-Saharan Africa, nearly 600 million people lack
                 electricity access, and the World Bank’s Mission 300 aims to
                 connect 300 million people by 2030 through distributed renewable
@@ -153,22 +139,24 @@ const Landing = () => {
       <section className="h-screen w-full flex flex-col items-center ">
         <div className=" w-[80%] flex justify-start pt-20 pl-2">
           <div className="sm:w-[35%] w-full flex flex-col ">
-            <div>
-              <div className="w-[8px] h-[8px] rounded-full"></div>
+            <div className="flex items-center gap-2 mb-2">
+              <div className="w-[8px] h-[8px] bg-[#30303070] rounded-full" />
               <h2>RenCom</h2>
             </div>
             <p className=" text-[38px] font-normal ">What We Offer</p>
-            <p className="text-[16px] font-light leading-[26px]">
+            <p className="text-[16px] text-[#383838CC] font-light leading-[26px]">
               Innovative, affordable, and <span>people-centered </span>
               approaches to Africa’s energy transition.
             </p>
           </div>
         </div>
 
-        <Carousel />
+        <div className="mb-32">
+          <Carousel />
+        </div>
       </section>
     </div>
   );
 };
 
-export default Landing;
+export default Home;
