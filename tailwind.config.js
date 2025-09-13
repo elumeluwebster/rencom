@@ -9,11 +9,11 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        newsreader: ["Newsreader", "serif"],
-        lobster: ["var(--font-lobster)", "cursive"],
-
         geist: ["Geist", "sans-serif"],
+        newsreader: ["Newsreader", "serif"],
         "geist-mono": ["Geist Mono", "monospace"],
+        lobster: ["var(--font-lobster)", "cursive"],
+        justmeagaindownhere: ["JustMeAgainDownHere", "serif"],
       },
       fontWeight: {
         thin: "50",
