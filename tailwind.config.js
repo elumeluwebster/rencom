@@ -14,6 +14,7 @@ module.exports = {
         "geist-mono": ["Geist Mono", "monospace"],
         lobster: ["var(--font-lobster)", "cursive"],
         justmeagaindownhere: ["JustMeAgainDownHere", "serif"],
+        ptmono: ["PTMono", ...defaultTheme.fontFamily.mono],
       },
       fontWeight: {
         thin: "50",

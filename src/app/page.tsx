@@ -41,7 +41,7 @@ const Landing = () => {
         </div>
 
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-          <p className="text-[18px] text-white">Scroll Down</p>
+          <p className="text-[18px] font-ptmono text-white">SCROLL DOWN</p>
         </div>
       </section>
 
@@ -57,7 +57,7 @@ const Landing = () => {
         </div>
 
         <div className="w-full ml-20">
-          <p className=" text-start hidden sm:block md:hidden lg:block">
+          <p className="text-start font-justmeagaindownhere hidden sm:block md:hidden lg:block">
             Why It Matters
           </p>
         </div>
