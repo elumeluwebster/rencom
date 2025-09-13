@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import HeaderLight from "@/components/header-dark";
+import HeaderLight from "@/components/header-light";
 
 import { collapsibles } from "@/utils/store";
 import { useRouter } from "next/navigation";

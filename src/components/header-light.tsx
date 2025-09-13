@@ -9,7 +9,7 @@ const HeaderLight = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleClick = () => {
-    router.push("/Contact-us");
+    router.push("/contact-us");
   };
 
   const toggleMobileMenu = () => {
@@ -21,7 +21,7 @@ const HeaderLight = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/">
+            <Link href="/landing">
               <img
                 src="/assets/icons/logo-light.svg"
                 alt="remcon light logo"
@@ -46,7 +46,7 @@ const HeaderLight = () => {
                 Services
               </Link>
               <Link
-                href="/Projects-impact"
+                href="/projects-impact"
                 className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
               >
                 Projects & Impacts
@@ -99,7 +99,7 @@ const HeaderLight = () => {
               Services
             </Link>
             <Link
-              href="/Projects-impact"
+              href="/projects-impact"
               className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
             >
               Projects & Impacts
@@ -111,7 +111,7 @@ const HeaderLight = () => {
               Our Story
             </Link>
             <Link
-              href="/Contact-us"
+              href="/contact-us"
               className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors "
             >
               Contact Us
