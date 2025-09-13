@@ -1,10 +1,7 @@
 @import "tailwindcss";
 
-.newsreader-light {
+.font-newsreader {
   font-family: "Newsreader", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: italic;
 }
 /* globals.css */
 html,

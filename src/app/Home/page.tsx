@@ -1,8 +1,9 @@
 import React from "react";
-import HeaderLight from "@/components/header-light";
 import Image from "next/image";
-import Carousel from "@/components/carousel";
+
 import AutoCarousel from "@/components/Autocarousel";
+import HeaderLight from "@/components/header-light";
+import Carousel from "@/components/carousel";
 
 const Home = () => {
   return (

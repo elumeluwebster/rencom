@@ -1,6 +1,7 @@
 import React from "react";
-import HeaderLight from "@/components/header-light";
 import Image from "next/image";
+
+import HeaderLight from "@/components/header-light";
 import Carousel from "@/components/carousel";
 
 const Landing = () => {
@@ -24,15 +25,15 @@ const Landing = () => {
           </p>
 
           <div className="mt-8 flex gap-3">
-            <button className="bg-[#E1FCAD] p-2 rounded-[30px] hover:bg-[#122023] text-black">
-              Start a Project
+            <button className="bg-[#E1FCAD] p-2 rounded-[30px] hover:bg-[#0B2520] hover:text-[#fff]">
+              Explore More
             </button>
-            <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full hover:bg-[#122023] transition-colors duration-300">
+            <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300">
               <Image
-                src="/assets/icons/up-right-arrow.svg"
+                src="/assets/icons/down-right-arrow.svg"
                 width={20}
                 height={20}
-                alt="Up-right arrow"
+                alt=""
               />
             </button>
           </div>

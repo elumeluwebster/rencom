@@ -9,7 +9,7 @@ const HeaderLight = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleClick = () => {
-    router.push("/Contact-us");
+    router.push("/contact-us");
   };
 
   const toggleMobileMenu = () => {
@@ -40,13 +40,7 @@ const HeaderLight = () => {
                 About Us
               </Link>
               <Link
-                href="/services"
-                className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
-              >
-                Services
-              </Link>
-              <Link
-                href="/Projects-impact"
+                href="/projects-impact"
                 className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
               >
                 Projects & Impacts
@@ -93,13 +87,7 @@ const HeaderLight = () => {
               About Us
             </Link>
             <Link
-              href="/services"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
-            >
-              Services
-            </Link>
-            <Link
-              href="/Projects-impact"
+              href="/projects-impact"
               className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
             >
               Projects & Impacts
@@ -111,7 +99,7 @@ const HeaderLight = () => {
               Our Story
             </Link>
             <Link
-              href="/Contact-us"
+              href="/contact-us"
               className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors "
             >
               Contact Us

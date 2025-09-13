@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10 px-3 md:px-28 pb-12">
           <div className="text-[#fefefb] font-geist font-light text-3xl md:text-4xl max-w-full md:max-w-xl">
             Sustainable <br />
-            <p className="text-newsreader">Energy Solutions</p>
+            <p className="font-newsreader italic">Energy Solutions</p>
             <div>
               <div className="flex-col gap-4">
                 <img
