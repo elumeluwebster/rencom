@@ -5,7 +5,7 @@ import { slides } from "@/utils/store";
 export default function Carousel() {
   const [start, setStart] = useState(0);
   const [visible, setVisible] = useState(4);
-  const cardWidth = 260 + 16;
+  const cardWidth = 220 + 10;
   const slideCount = slides.length;
 
   const extendedSlides = [...slides, ...slides];
