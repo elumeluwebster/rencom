@@ -15,6 +15,7 @@ module.exports = {
         lobster: ["var(--font-lobster)", "cursive"],
         justmeagaindownhere: ["JustMeAgainDownHere", "serif"],
         ptmono: ["PTMono", ...defaultTheme.fontFamily.mono],
+        questrial: ["Questrial", "sans-serif"],
       },
       fontWeight: {
         thin: "50",
