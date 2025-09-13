@@ -169,12 +169,12 @@ const Landing = () => {
 
       <section className="min-h-screen w-full flex flex-col items-center py-16">
         <div className="w-[90%] sm:w-[80%] flex justify-start pt-4 sm:pt-20 pl-2">
-          <div className="sm:w-[35%] w-full flex flex-col ">
+          <div className="sm:w-[35%] w-full flex flex-col">
             <div className="flex items-center gap-2 mb-2">
               <div className="w-[8px] h-[8px] bg-[#30303070] rounded-full" />
               <h2>RenCom</h2>
             </div>
-            <p className="text-[28px] sm:text-[38px] font-normal ">
+            <p className="text-[28px] sm:text-[38px] font-normal">
               What We Offer
             </p>
             <p className="text-[16px] text-[#383838CC] font-light leading-[26px]">

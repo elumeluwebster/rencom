@@ -23,7 +23,7 @@ export default function AutoCarousel() {
         height={200}
         className="absolute -z-10 top-[-170px] right-30 hidden sm:block"
       />
-      <div className="w-[90%] bg-[#014715] flex justify-center rounded-[18px] p-3 ">
+      <div className="w-[90%] bg-[#014715] flex justify-center rounded-[18px] p-3">
         <div className="overflow-hidden px-2">
           <div
             className="flex gap-1 transition-transform duration-1000 ease-in-out"

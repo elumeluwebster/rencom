@@ -10,9 +10,9 @@ export default function Contact() {
       <div>
         <section className="relative h-auto mt-20 mb-24 px-4 sm:px-6 md:px-28 pb-40">
           <div className="flex flex-col md:flex-row gap-12 md:gap-16">
-            <div className="flex-1 flex flex-col gap-4  ">
+            <div className="flex-1 flex flex-col gap-4">
               <p className="text-[16px] text-[#0F3D1C]">Partner With Us</p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-regular text-[#0F3D1C] leading-snug">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#0F3D1C] leading-snug">
                 Let’s Power <br />
                 Change Together{" "}
               </h2>

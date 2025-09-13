@@ -106,7 +106,7 @@ const HeaderDark = () => {
             </Link>
             <Link
               href="/contact-us"
-              className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors "
+              className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors"
             >
               Contact Us
             </Link>

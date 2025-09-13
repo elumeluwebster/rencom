@@ -164,7 +164,7 @@ const Home = () => {
               <div className="w-[8px] h-[8px] bg-[#30303070] rounded-full" />
               <h2>RenCom</h2>
             </div>
-            <p className="text-[28px] sm:text-[38px] font-normal ">
+            <p className="text-[28px] sm:text-[38px] font-normal">
               What We Offer
             </p>
             <p className="text-[16px] text-[#383838CC] font-light leading-[26px]">
