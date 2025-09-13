@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 
 import AutoCarousel from "@/components/Autocarousel";
-import HeaderLight from "@/components/header-light";
+import HeaderDark from "@/components/header-dark";
 import Carousel from "@/components/carousel";
 
 const Home = () => {
   return (
     <div>
-      <HeaderLight />
+      <HeaderDark />
       <section className="min-h-screen w-full flex flex-col items-center py-4">
         <div className="flex text-[40px] sm:text-[68px] sm:w-[40%] text-center leading-[74px] text-[#242424] p-3 font-light">
           <h2>
