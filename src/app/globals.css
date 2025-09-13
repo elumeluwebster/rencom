@@ -3,38 +3,17 @@
 .font-newsreader {
   font-family: "Newsreader", serif;
 }
+.font-ptmono {
+  font-family: "PTMONO", monospace;
+}
+.geist {
+  font-family: "Geist", sans-serif;
+}
+.justmeagaindownhere {
+  font-family: "JustMeAgainDownHere", sans-serif;
+}
 /* globals.css */
 html,
 body {
   overflow-x: hidden;
 }
-
-/* :root {
-	--font-geist-mono: "Geist Mono", monospace;
-	--font-newsreader: "Newsreader", serif;
-	--font-geist-sans: "Geist", sans-serif;
-	--font-inter: "Inter", sans-serif;
-
-	--background: #ffffff;
-	--foreground: #eeede4;
-}
-
-@theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #eeede4;
-		--foreground: #ededed;
-	}
-}
-
-body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: var(--font-inter);
-} */
