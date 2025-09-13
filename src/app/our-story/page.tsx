@@ -1,5 +1,6 @@
 import React from "react";
 import { FiChevronRight } from "react-icons/fi";
+import { aboutData } from "@/utils/store";
 
 import HeaderDark from "@/components/header-dark";
 
@@ -27,8 +28,7 @@ const OurStory = () => {
                   className="w-full h-full bg-cover bg-center"
                   style={{
                     backgroundImage: "url('/assets/images/malwena.png')",
-                  }}
-                ></div>
+                  }}></div>
                 <div className="absolute bottom-[10%] right-[5%] w-4 h-4 bg-[#B6E400] rounded-full  border-white border-2 z-10"></div>
               </div>
 
@@ -75,27 +75,34 @@ const OurStory = () => {
           </h2>
 
           <div className="flex flex-wrap gap-4 w-full px-4 mb-20">
-            {[1, 2, 3, 4].map((num) => (
+            {aboutData.map((items) => (
               <div
-                key={num}
-                className={`flex-1 basis-full h-[350px] rounded-2xl overflow-hidden bg-cover bg-center
-                 sm:basis-[calc(50%-0.5rem)] sm:h-[450px]`}
+                key={items.num}
+                className={`group relative flex-1 basis-full h-[350px] rounded-2xl overflow-hidden bg-cover bg-center
+      sm:basis-[calc(50%-0.5rem)] sm:h-[450px]`}
                 style={{
-                  backgroundImage: `url('/assets/images/sustainable${num}.png')`,
-                }}
-              >
-                {num === 4 && (
-                  <div className="flex justify-end items-end p-4 h-full w-full">
-                    {/* <div className="flex gap-1 items-center bg-black bg-opacity-30 p-2 rounded">
-                      <p className="text-[14px] leading-[20px] text-[#F4F3EA]">
-                        Be a Partner
-                      </p>
-                      <button className="w-8 h-8 flex items-center justify-center bg-[#B6E400] rounded-full transition-colors duration-300">
-                        <FiChevronRight />
-                      </button>
-                    </div> */}
+                  backgroundImage: `url('/assets/images/sustainable${items.num}.png')`,
+                }}>
+                <div className="absolute inset-0 bg-black/40 z-0"></div>
+
+                {/* Text container */}
+                <div className="relative z-10 w-full text-white p-3 mt-auto transition-all duration-400 group-hover:-translate-y-4 flex flex-col justify-end h-full">
+                  <div className="w-fit">
+                    <p className="inline-block text-[26px] text-[#a4a0a0] font-bold font-anton transition-colors duration-300 group-hover:bg-black group-hover:text-white group-hover:p-2 rounded">
+                      {items.Tittle}
+                    </p>
                   </div>
-                )}
+
+                  <div
+                    className="flex items-start gap-2 mt-1 opacity-0 max-h-0 overflow-hidden 
+        transition-all duration-300 group-hover:opacity-100 group-hover:max-h-28">
+                    <div className="w-2 bg-green-500 h-full rounded-full"></div>
+
+                    <p className="text-[12px] text-[#F4F3EA] max-w-[50%]">
+                      {items.Details}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -152,3 +159,13 @@ const OurStory = () => {
 };
 
 export default OurStory;
+{
+  /* <div className="flex gap-1 items-center bg-black bg-opacity-30 p-2 rounded">
+                      <p className="text-[14px] leading-[20px] text-[#F4F3EA]">
+                        Be a Partner
+                      </p>
+                      <button className="w-8 h-8 flex items-center justify-center bg-[#B6E400] rounded-full transition-colors duration-300">
+                        <FiChevronRight />
+                      </button>
+                    </div> */
+}
