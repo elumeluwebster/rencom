@@ -1,11 +1,16 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 
 import CustomSelect from "@/components/custom-select";
 import HeaderDark from "@/components/header-dark";
 
 export default function Contact() {
   const [reason, setReason] = React.useState<string>("");
+  const nextSectionRef = useRef<HTMLDivElement>(null);
+
+  const handleClick = () => {
+    nextSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <HeaderDark />
@@ -20,12 +25,11 @@ export default function Contact() {
               </h2>
 
               <p className="text-[16px] text-[#000000] font-extralight leading-[30px]">
-                We collaborate with investors, NGOs, governments, and <br />
-                communities to accelerate clean energy adoption. Partner <br />
-                with us to create lasting impact for people and the planet.
+                We collaborate with investors, NGOs, <br /> Governments, and
+                Communities to accelerate <br /> clean energy adoption.
               </p>
 
-              <div className="flex flex-row items-center gap-4 mt-4">
+              <div className="flex flex-row mb-10 items-center gap-4 mt-4">
                 <a href="#">
                   <img
                     src="/assets/icons/gmail.svg"

@@ -1,12 +1,10 @@
 "use client";
 import React, { useState, useRef } from "react";
-import HeaderLight from "@/components/header-light";
 
+import HeaderLight from "@/components/header-light";
 import { collapsibles } from "@/utils/store";
-import { useRouter } from "next/navigation";
 
 export default function About() {
-  const router = useRouter();
   const nextSectionRef = useRef<HTMLDivElement>(null);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
