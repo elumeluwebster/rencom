@@ -1,17 +1,32 @@
 "use client";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import { auto_slides } from "@/utils/store";
 
 export default function AutoCarousel() {
-  const [start, setStart] = useState(0);
-  const cardWidth = 200 + 10;
+  const trackRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<number>(0);
+
+  const cardWidth = 380 + 10;
+  const totalSlides = auto_slides.length;
+  const speed = 0.5;
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setStart((prev) => (prev + 1 >= auto_slides.length ? 0 : prev + 1));
-    }, 3000);
-    return () => clearInterval(interval);
+    let animationFrameId: number;
+
+    const animate = () => {
+      if (trackRef.current) {
+        scrollRef.current += speed;
+        const scrollAmount = scrollRef.current % (cardWidth * totalSlides);
+        trackRef.current.style.transform = `translateX(-${scrollAmount}px)`;
+      }
+
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
   return (
@@ -23,15 +38,24 @@ export default function AutoCarousel() {
         height={200}
         className="absolute -z-10 top-[-170px] right-30 hidden sm:block"
       />
+
       <div className="w-[90%] bg-[#014715] flex justify-center rounded-[18px] p-3">
         <div className="overflow-hidden px-2">
           <div
-            className="flex gap-1 transition-transform duration-1000 ease-in-out"
+            ref={trackRef}
+            className="flex gap-2"
             style={{
-              transform: `translateX(-${start * cardWidth}px)`,
+              whiteSpace: "nowrap",
+              willChange: "transform",
             }}
           >
-            {auto_slides.map((slide, idx) => (
+            {[
+              ...auto_slides,
+              ...auto_slides,
+              ...auto_slides,
+              ...auto_slides,
+              ...auto_slides,
+            ].map((slide, idx) => (
               <div
                 key={idx}
                 className="w-[380px] h-[420px] flex-shrink-0 rounded-xl overflow-hidden relative"

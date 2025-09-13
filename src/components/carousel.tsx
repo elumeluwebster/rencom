@@ -1,43 +1,64 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { slides } from "@/utils/store";
 
 export default function Carousel() {
-  const [start, setStart] = useState(0);
   const [visible, setVisible] = useState(4);
-  const cardWidth = 220 + 10;
-  const slideCount = slides.length;
+  const containerRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<number>(0);
+  const animationRef = useRef<number>(0);
 
-  const extendedSlides = [...slides, ...slides];
+  const cardWidth = 220 + 10; // card width + gap
+  const extendedSlides = [
+    ...slides,
+    ...slides,
+    ...slides,
+    ...slides,
+    ...slides,
+  ]; // repeat for seamless loop
+  const totalWidth = extendedSlides.length * cardWidth;
+
+  const speed = 0.5; // px per frame (adjust for faster/slower scroll)
 
   useEffect(() => {
     function handleResize() {
       setVisible(window.innerWidth < 640 ? 1 : 4);
     }
+
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setStart((prev) => {
-        if (prev + 1 === slideCount) {
-          return 0;
+    const animate = () => {
+      if (trackRef.current) {
+        scrollRef.current -= speed;
+        if (scrollRef.current <= 0) {
+          scrollRef.current = totalWidth / 2;
         }
-        return prev + 1;
-      });
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+        trackRef.current.style.transform = `translateX(-${scrollRef.current}px)`;
+      }
+      animationRef.current = requestAnimationFrame(animate);
+    };
+
+    animationRef.current = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(animationRef.current!);
+  }, [totalWidth]);
 
   return (
-    <div className="w-full bg-transparent mt-20 px-2 overflow-hidden">
+    <div
+      ref={containerRef}
+      className="w-full bg-transparent mt-20 px-2 overflow-hidden"
+    >
       <div
-        className="flex gap-4 transition-transform duration-1000 ease-in-out"
+        ref={trackRef}
+        className="flex gap-4"
         style={{
-          width: `${extendedSlides.length * cardWidth}px`,
-          transform: `translateX(-${start * cardWidth}px)`,
+          width: `${totalWidth}px`,
+          willChange: "transform",
         }}
       >
         {extendedSlides.map((slide, idx) => (
