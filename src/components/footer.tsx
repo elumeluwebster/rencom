@@ -24,8 +24,8 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row w-full md:w-2/3 gap-6 bg-[#0F3D1C] rounded-lg p-6 md:p-8">
             <div className="flex-1 flex flex-col justify-center">
-              <h3 className="text-[#bcbcbc] font-geist text-lg md:text-xl mb-4 md:mb-6 leading-snug">
-                Subscribe for helpful insight and resources
+              <h3 className="text-[#fefefb] font-light font-geist text-lg md:text-xl mb-4 md:mb-6 leading-snug">
+                Need us to reach out? Leave your email
               </h3>
               <input
                 type="email"

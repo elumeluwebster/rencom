@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -11,6 +11,13 @@ const Landing = () => {
   const handleProjects = () => {
     route.push("/projects-impact");
   };
+
+  const nextSectionRef = useRef<HTMLDivElement>(null);
+
+  const handleClick = () => {
+    nextSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <section className="relative bg-[url('/assets/images/windmill-landing.png')] bg-cover bg-center bg-no-repeat h-screen w-full">
@@ -33,7 +40,10 @@ const Landing = () => {
             <div className="bg-[#E1FCAD] px-6 py-3 rounded-[30px]">
               Explore More
             </div>
-            <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300">
+            <button
+              onClick={handleClick}
+              className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300"
+            >
               <Image
                 src="/assets/icons/down-right-arrow.svg"
                 width={20}
@@ -50,7 +60,10 @@ const Landing = () => {
         </div>
       </section>
 
-      <section className="min-h-screen w-full py-16 flex flex-col items-center justify-center bg-[#D8E4CA]">
+      <section
+        ref={nextSectionRef}
+        className="min-h-screen w-full py-16 flex flex-col items-center justify-center bg-[#D8E4CA]"
+      >
         <div className="flex flex-col items-center w-[80%] text-center mb-8">
           <p className="text-gray-600 font-geist font-medium">
             Powering Inclusive & Sustainable Energy Access
