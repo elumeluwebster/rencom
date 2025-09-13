@@ -11,7 +11,7 @@ export default function Contact() {
         <section className="relative h-auto mt-20 mb-24 px-4 sm:px-6 md:px-28 pb-40">
           <div className="flex flex-col md:flex-row gap-12 md:gap-16">
             <div className="flex-1 flex flex-col gap-4  ">
-              <p className=" tex-[16px] text-[#0F3D1C]">Partner With Us</p>
+              <p className="text-[16px] text-[#0F3D1C]">Partner With Us</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-regular text-[#0F3D1C] leading-snug">
                 Let’s Power <br />
                 Change Together{" "}
@@ -103,7 +103,8 @@ export default function Contact() {
                     <textarea
                       placeholder="Type your message here..."
                       className="w-full p-3 border border-[#EDEDED]  resize-none bg-[#F4F3EA] text-black  rounded-[16px]"
-                      rows={8}></textarea>
+                      rows={8}
+                    ></textarea>
                   </label>
 
                   <label className="flex items-center w-full space-x-2">
@@ -124,7 +125,8 @@ export default function Contact() {
 
                     <button
                       type="submit"
-                      className="bg-[#B6E400] cursor-pointer text-black text-[13px] p-3 rounded-[32px] w-[200px] sm:w-auto">
+                      className="bg-[#B6E400] cursor-pointer text-black text-[13px] p-3 rounded-[32px] w-[200px] sm:w-auto"
+                    >
                       Send message{" "}
                     </button>
                   </div>

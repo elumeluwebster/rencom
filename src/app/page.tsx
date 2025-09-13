@@ -13,21 +13,20 @@ const Landing = () => {
         </div>
 
         <div className="flex h-full w-full flex-col items-center justify-center text-center px-4">
-          <h2 className="text-[73px] text-white leading-[83px] font-bold">
-            Sustainable Energy <br />
-            Solutions
+          <h2 className="text-[73px] font-geist font-normal text-white leading-[83px]">
+            Sustainable <br /> Energy Solutions
           </h2>
 
-          <p className="mt-6 max-w-2xl text-white text-lg">
+          <p className="font-geist font-extralight mt-6 max-w-2xl text-white text-lg">
             Based in Nigeria, RenCom is dedicated to delivering dependable,
             sustainable power solutions for communities and businesses, enabling
             economic growth and resilient development.
           </p>
 
           <div className="mt-8 flex gap-1.5">
-            <button className="bg-[#E1FCAD] px-6 py-2 rounded-[30px] hover:bg-[#0B2520] hover:text-[#fff] cursor-pointer">
+            <div className="bg-[#E1FCAD] px-6 py-3 rounded-[30px]">
               Explore More
-            </button>
+            </div>
             <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300">
               <Image
                 src="/assets/icons/down-right-arrow.svg"
@@ -79,7 +78,7 @@ const Landing = () => {
                 alt="Clean Cooking Solutions"
                 width={100}
                 height={100}
-                className=" absolute left-[-150px] bottom-[100px]"
+                className="absolute left-[-150px] bottom-[100px]"
               />
             </div>
 
@@ -151,13 +150,13 @@ const Landing = () => {
       </section>
 
       <section className="h-screen w-full flex flex-col items-center ">
-        <div className=" w-[80%] flex justify-start pt-20 pl-2">
+        <div className="w-[80%] flex justify-start pt-20 pl-2">
           <div className="sm:w-[35%] w-full flex flex-col ">
             <div>
               <div className="w-[8px] h-[8px] rounded-full"></div>
               <h2>RenCom</h2>
             </div>
-            <p className=" text-[38px] font-normal ">What We Offer</p>
+            <p className="text-[38px] font-normal ">What We Offer</p>
             <p className="text-[16px] font-light leading-[26px]">
               Innovative, affordable, and <span>people-centered </span>
               approaches to Africa’s energy transition.

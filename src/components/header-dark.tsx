@@ -31,7 +31,7 @@ const HeaderDark = () => {
             </Link>
           </div>
 
-          <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl">
+          <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl font-regular font-questrial">
             <div className="flex items-baseline space-x-8">
               <Link
                 href="/home"

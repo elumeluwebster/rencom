@@ -56,7 +56,7 @@ const Landing = () => {
         </div>
 
         <div className="w-full ml-20">
-          <p className=" text-start hidden sm:block md:hidden lg:block">
+          <p className="text-start hidden sm:block md:hidden lg:block">
             Why It Matters
           </p>
         </div>
@@ -78,7 +78,7 @@ const Landing = () => {
                 alt="Clean Cooking Solutions"
                 width={100}
                 height={100}
-                className=" absolute left-[-150px] bottom-[100px]"
+                className="absolute left-[-150px] bottom-[100px]"
               />
             </div>
 
@@ -150,13 +150,13 @@ const Landing = () => {
       </section>
 
       <section className="h-screen w-full flex flex-col items-center ">
-        <div className=" w-[80%] flex justify-start pt-20 pl-2">
+        <div className="w-[80%] flex justify-start pt-20 pl-2">
           <div className="sm:w-[35%] w-full flex flex-col ">
             <div>
               <div className="w-[8px] h-[8px] rounded-full"></div>
               <h2>RenCom</h2>
             </div>
-            <p className=" text-[38px] font-normal ">What We Offer</p>
+            <p className="text-[38px] font-normal ">What We Offer</p>
             <p className="text-[16px] font-light leading-[26px]">
               Innovative, affordable, and <span>people-centered </span>
               approaches to Africa’s energy transition.

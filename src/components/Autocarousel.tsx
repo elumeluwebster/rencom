@@ -21,7 +21,7 @@ export default function AutoCarousel() {
         alt="sliderImages"
         width={300}
         height={200}
-        className=" absolute -z-10 top-[-170px] right-30 hidden sm:block"
+        className="absolute -z-10 top-[-170px] right-30 hidden sm:block"
       />
       <div className="w-[90%] bg-[#014715] flex justify-center rounded-[18px] p-3 ">
         <div className="overflow-hidden px-2">
