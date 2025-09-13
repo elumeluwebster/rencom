@@ -5,7 +5,7 @@ import { auto_slides } from "@/utils/store";
 
 export default function AutoCarousel() {
   const [start, setStart] = useState(0);
-  const cardWidth = 360 + 16;
+  const cardWidth = 200 + 10;
 
   useEffect(() => {
     const interval = setInterval(() => {
