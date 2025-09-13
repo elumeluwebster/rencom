@@ -21,7 +21,7 @@ const HeaderDark = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/landing">
+            <Link href="/">
               <img
                 src="/assets/icons/logo-dark.svg"
                 alt="remcon dark logo"
