@@ -76,3 +76,33 @@ export const options = [
   { value: "collaboration", label: "Collaboration" },
   { value: "other", label: "Other" },
 ];
+
+export const aboutData = [
+  {
+    num: 1,
+    Tittle: "Improving Livelihood",
+    Details:
+      "Transitioning communities away from expensive and unhealthy diesel generators and kerosene solutions will lead to catalytic improvements in living standards.",
+  },
+  {
+    num: 2,
+
+    Tittle: "The Climate ",
+    Details:
+      "Climate-induced challenges like desertification, floods and pollution demand equitable, sustainable energy solutions.Transitioning communities away from expensive and unhealthy diesel generators and kerosene solutions will lead to catalytic improvements in living standards.",
+  },
+  {
+    num: 3,
+
+    Tittle: "Opportunity & Responsibility",
+    Details:
+      "Nigeria’s push for carbon neutrality by 2060 and the implementation of its ETP creates fertile ground for companies like RenCom to lead.",
+  },
+  {
+    num: 4,
+
+    Tittle: "A Role in Africa’s Mission 300",
+    Details:
+      "With governments committing to energy reforms and projects under National Energy Compacts, private actors like RenCom are critical for scaling clean energy access by 2030.  ",
+  },
+];
