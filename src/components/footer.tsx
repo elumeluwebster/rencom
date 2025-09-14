@@ -17,11 +17,13 @@ const Footer = () => {
   return (
     <section>
       <section>
-        <div className="relative w-full">
+        <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
           <Image
-            className="w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover"
+            className="object-cover"
             src="/assets/images/footer-img.png"
             alt="SUSTAINABLE ENERGY FOR ALL"
+            fill
+            priority
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
             <div className="flex flex-row gap-1.5 items-center mb-4">
@@ -62,14 +64,15 @@ const Footer = () => {
               Sustainable <br />
               <p className="font-newsreader italic">Energy Solutions</p>
               <div>
-                <div className="flex-col gap-4">
+                <div className="relative w-32 h-12 mt-4">
                   <Image
-                    className="mt-15"
                     src="/assets/icons/logo-light.svg"
                     alt="logo"
+                    fill
+                    className="object-contain"
                   />
-                  <p className="text-sm mt-8">© Copyright RenCom</p>
                 </div>
+                <p className="text-sm mt-8">© Copyright RenCom</p>
               </div>
             </div>
 
@@ -102,6 +105,8 @@ const Footer = () => {
                   src="/assets/images/grass-letter.png"
                   alt="Newsletter Illustration"
                   className="w-[70%] h-auto object-contain"
+                  width={500}
+                  height={300}
                 />
               </div>
             </div>
