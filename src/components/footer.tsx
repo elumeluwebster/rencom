@@ -40,13 +40,13 @@ const Footer = () => {
             <div className="mt-6 flex flex-row justify-center gap-4 w-full max-w-sm mx-auto">
               <button
                 onClick={handleContact}
-                className="w-28 sm:w-40 px-4 sm:px-6 py-2 sm:py-3 font-geist rounded-full text-xs sm:text-base text-[#F4F3EA] bg-[#1A1A1745] hover:bg-[#1A1A1795] transition duration-200"
+                className="w-28 sm:w-40 px-4 sm:px-6 py-2 sm:py-3 font-geist rounded-full text-xs sm:text-base text-[#F4F3EA] bg-[#1A1A1745] hover:bg-[#1A1A1795] transition duration-200 cursor-pointer"
               >
                 Contact Us
               </button>
               <button
                 onClick={handleProjects}
-                className="w-28 sm:w-40 px-4 sm:px-6 py-2 sm:py-3 font-geist rounded-full text-xs sm:text-base bg-[#B6E400] hover:bg-[#7f9f00] transition duration-200"
+                className="w-28 sm:w-40 px-4 sm:px-6 py-2 sm:py-3 font-geist rounded-full text-xs sm:text-base bg-[#B6E400] hover:bg-[#7f9f00] transition duration-200 cursor-pointer"
               >
                 View Projects
               </button>
