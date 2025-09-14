@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -22,7 +23,7 @@ const HeaderDark = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/">
-              <img
+              <Image
                 src="/assets/icons/logo-dark.svg"
                 alt="remcon dark logo"
                 height={70}

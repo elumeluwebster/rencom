@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const Footer = () => {
@@ -17,7 +18,7 @@ const Footer = () => {
     <section>
       <section>
         <div className="relative w-full">
-          <img
+          <Image
             className="w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover"
             src="/assets/images/footer-img.png"
             alt="SUSTAINABLE ENERGY FOR ALL"
@@ -62,7 +63,7 @@ const Footer = () => {
               <p className="font-newsreader italic">Energy Solutions</p>
               <div>
                 <div className="flex-col gap-4">
-                  <img
+                  <Image
                     className="mt-15"
                     src="/assets/icons/logo-light.svg"
                     alt="logo"
@@ -77,7 +78,7 @@ const Footer = () => {
                 <h3 className="text-[#fefefb] font-extralight font-geist text-base sm:text-lg md:text-xl mb-4 md:mb-6 leading-snug">
                   Need to talk about sustainable energy? Please leave{" "}
                   <br className="hidden sm:inline" />
-                  your mail and we’ll contact you.
+                  your mail and we&apos;ll contact you.
                 </h3>
 
                 <div className="flex flex-col sm:flex-row items-stretch gap-3 mb-4">
@@ -97,7 +98,7 @@ const Footer = () => {
               </div>
 
               <div className="hidden md:flex md:w-1/3 h-full overflow-hidden rounded-md items-center justify-end">
-                <img
+                <Image
                   src="/assets/images/grass-letter.png"
                   alt="Newsletter Illustration"
                   className="w-[70%] h-auto object-contain"

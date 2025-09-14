@@ -27,7 +27,7 @@ export default function AutoCarousel() {
     animate();
 
     return () => cancelAnimationFrame(animationFrameId);
-  }, []);
+  }, [cardWidth, totalSlides]);
 
   return (
     <div className="w-full flex justify-center items-center my-10 z-20 relative">
