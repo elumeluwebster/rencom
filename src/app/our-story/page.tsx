@@ -1,7 +1,6 @@
 import React from "react";
 
 import { aboutData } from "@/utils/store";
-
 import HeaderDark from "@/components/header-dark";
 
 const OurStory = () => {

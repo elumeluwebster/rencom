@@ -175,11 +175,11 @@ const Landing = () => {
           <div className="mt-8 gap-1.5 flex">
             <button
               onClick={handleProjects}
-              className="bg-[#E1FCAD] px-5 py-2 font-normal text-[15px] rounded-[30px] hover:bg-[#122023] text-black"
+              className="bg-[#E1FCAD] px-5 py-2 font-normal text-[15px] rounded-[30px] text-black"
             >
               View Projects{" "}
             </button>
-            <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full hover:bg-[#122023] transition-colors duration-300">
+            <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300">
               <Image
                 src="/assets/icons/up-right-arrow.svg"
                 width={20}
