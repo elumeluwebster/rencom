@@ -6,12 +6,11 @@ import { useRouter } from "next/navigation";
 import AutoCarousel from "@/components/Autocarousel";
 import HeaderDark from "@/components/header-dark";
 import Carousel from "@/components/carousel";
-import { FiChevronRight } from "react-icons/fi";
 
 const Home = () => {
   const route = useRouter();
   const handleProjects = () => {
-    route.push("/projects-impact");
+    route.push("/Projects-impact");
   };
   return (
     <div>
@@ -37,7 +36,7 @@ const Home = () => {
           className="bg-[#134E24] font-geist font-medium px-6 py-2.5 flex flex-row cursor-pointer text-[14px] rounded-[30px] text-white my-4"
           onClick={handleProjects}
         >
-          Explore Projects <FiChevronRight />
+          Explore Projects →
         </button>{" "}
       </section>
 
@@ -142,11 +141,11 @@ const Home = () => {
           <div className="mt-8 gap-1.5 flex">
             <button
               onClick={handleProjects}
-              className="bg-[#E1FCAD] px-5 py-2 font-normal text-[15px] rounded-[30px] hover:bg-[#122023] text-black"
+              className="bg-[#E1FCAD] px-5 py-2 font-normal text-[15px] rounded-[30px] text-black"
             >
               View Projects{" "}
             </button>
-            <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full hover:bg-[#122023] transition-colors duration-300">
+            <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300">
               <Image
                 src="/assets/icons/up-right-arrow.svg"
                 width={20}
