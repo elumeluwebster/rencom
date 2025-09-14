@@ -6,12 +6,11 @@ import { useRouter } from "next/navigation";
 import AutoCarousel from "@/components/Autocarousel";
 import HeaderDark from "@/components/header-dark";
 import Carousel from "@/components/carousel";
-import { FiChevronRight } from "react-icons/fi";
 
 const Home = () => {
   const route = useRouter();
   const handleProjects = () => {
-    route.push("/projects-impact");
+    route.push("/Projects-impact");
   };
   return (
     <div>
@@ -37,7 +36,7 @@ const Home = () => {
           className="bg-[#134E24] font-geist font-medium px-6 py-2.5 flex flex-row cursor-pointer text-[14px] rounded-[30px] text-white my-4"
           onClick={handleProjects}
         >
-          Explore Projects <FiChevronRight />
+          Explore Projects →
         </button>{" "}
       </section>
 

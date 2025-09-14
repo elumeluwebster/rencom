@@ -7,11 +7,11 @@ const Footer = () => {
   const route = useRouter();
 
   const handleProjects = () => {
-    route.push("/projects-impact");
+    route.push("/Projects-impact");
   };
 
   const handleContact = () => {
-    route.push("/contact-us");
+    route.push("/Contact-us");
   };
 
   return (
