@@ -102,7 +102,7 @@ export const aboutData = [
     Tittle: "A Role in Africa’s Mission 300",
 
     Details:
-      "With governments committing to energy reforms and projects under National Energy Compacts, private actors like RenCom are critical for scaling clean energy access by 2030.  ",
+      "With governments committing to energy reforms and projects under National Energy Compacts, private actors like RenCom are critical for scaling clean energy access by 2030.",
   },
 ];
 
@@ -112,34 +112,34 @@ export const projectImpactData = [
     Tittle: "KWARA COMMUNITY",
     tittle2: "SOLAR MINI-GRIDS",
     Details:
-      "Powering rural communities across Kwara state through minigrid projects to improve the lives of inhabitants, reduce carbon emissions and boost the local productivity of the farmers.   ",
+      "Powering rural communities across Kwara state through minigrid projects to improve the lives of inhabitants, reduce carbon emissions and boost the local productivity of the farmers.",
     src: "/assets/images/Component18",
   },
 
   {
     num: 2,
-    Tittle: "AGR0-BOOST ",
-    tittle2: "CTIVATION",
+    Tittle: "AGR0-BOOST",
+    tittle2: "ACTIVATION",
 
     Details:
-      "Bringing light and connectivity to underserved farming communities by deploying solar-powered productive use  solutions like cold storage systems and solar pumping machines for irrigation to replace hazardous fuel-powered alternatives.   ",
+      "Bringing light and connectivity to underserved farming communities by deploying solar-powered productive use solutions like cold storage systems and solar pumping machines for irrigation to replace hazardous fuel-powered alternatives.",
     src: "/assets/images/Component19",
   },
 
   {
     num: 3,
-    Tittle: " CLEAN COOKING",
+    Tittle: "CLEAN COOKING",
     tittle2: "PILOT PROJECT",
 
     Details:
-      "Deploying clean cookstove or LPG initiatives through female associations and communities in pere-urban neighbourhoods, improving health and reducing environmental harm.     ",
+      "Deploying clean cookstove or LPG initiatives through female associations and communities in pere-urban neighbourhoods, improving health and reducing environmental harm.",
     src: "/assets/images/Component20",
   },
   {
     num: 4,
 
-    Tittle: " SOLAR LIFE ",
-    tittle2: " PROJECTS",
+    Tittle: "SOLAR LIFE",
+    tittle2: "PROJECTS",
 
     Details:
       "Power Primary Health Care centres in Western Nigeria to reduce the rate of avoidable death from facility inefficiencies.",
