@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const Footer = () => {
@@ -16,11 +17,13 @@ const Footer = () => {
   return (
     <section>
       <section>
-        <div className="relative w-full">
-          <img
-            className="w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover"
+        <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
+          <Image
+            className="object-cover"
             src="/assets/images/footer-img.png"
             alt="SUSTAINABLE ENERGY FOR ALL"
+            fill
+            priority
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
             <div className="flex flex-row gap-1.5 items-center mb-4">
@@ -61,14 +64,15 @@ const Footer = () => {
               Sustainable <br />
               <p className="font-newsreader italic">Energy Solutions</p>
               <div>
-                <div className="flex-col gap-4">
-                  <img
-                    className="mt-15"
+                <div className="relative w-32 h-12 mt-4">
+                  <Image
                     src="/assets/icons/logo-light.svg"
                     alt="logo"
+                    fill
+                    className="object-contain"
                   />
-                  <p className="text-sm mt-8">© Copyright RenCom</p>
                 </div>
+                <p className="text-sm mt-8">© Copyright RenCom</p>
               </div>
             </div>
 
@@ -77,7 +81,7 @@ const Footer = () => {
                 <h3 className="text-[#fefefb] font-extralight font-geist text-base sm:text-lg md:text-xl mb-4 md:mb-6 leading-snug">
                   Need to talk about sustainable energy? Please leave{" "}
                   <br className="hidden sm:inline" />
-                  your mail and we’ll contact you.
+                  your mail and we&apos;ll contact you.
                 </h3>
 
                 <div className="flex flex-col sm:flex-row items-stretch gap-3 mb-4">
@@ -97,10 +101,12 @@ const Footer = () => {
               </div>
 
               <div className="hidden md:flex md:w-1/3 h-full overflow-hidden rounded-md items-center justify-end">
-                <img
+                <Image
                   src="/assets/images/grass-letter.png"
                   alt="Newsletter Illustration"
                   className="w-[70%] h-auto object-contain"
+                  width={500}
+                  height={300}
                 />
               </div>
             </div>

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useRef } from "react";
 
 import HeaderLight from "@/components/header-light";
@@ -39,7 +40,7 @@ export default function About() {
             </button>
 
             <div className="cursor-pointer rounded-full bg-[#E1FCAD] p-3 flex items-center justify-center">
-              <img
+              <Image
                 src="/assets/icons/down-right-arrow.svg"
                 alt="arrow icon"
                 className="w-4 h-4"
@@ -52,7 +53,7 @@ export default function About() {
       <div ref={nextSectionRef} className="mt-24 px-4 sm:px-6 md:px-28 pb-24">
         <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 mt-12 mb-20">
           <div className="w-full md:w-1/2">
-            <img
+            <Image
               src="/assets/images/engineer.png"
               alt="image of an engineer"
               className="w-full h-auto rounded-lg"
@@ -67,13 +68,13 @@ export default function About() {
                 </p>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-[40px] font-regular font-geist mb-3">
-                Key Driver of Nigeria's Energy
+                Key Driver of Nigeria&apos;s Energy
                 <br className="hidden sm:block" />
                 Transition
               </h2>
               <p className="text-gray-700 font-extralight text-sm sm:text-base leading-8">
-                To be a key driver of Nigeria’s energy transition and Africa's{" "}
-                <br />
+                To be a key driver of Nigeria&apos;s energy transition and
+                Africa&apos;s <br />
                 electrification, delivering equitable, sustainable power
                 solutions that <br /> support thriving communities and
                 economies.
@@ -128,7 +129,7 @@ export default function About() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-[#E8FF9C] flex items-center justify-center rounded">
-                      <img
+                      <Image
                         src={item.icon}
                         alt={`${item.title} icon`}
                         className="w-4 h-4"
@@ -150,7 +151,7 @@ export default function About() {
               </div>
             ))}
           </div>
-          <img
+          <Image
             src="/assets/images/impact.png"
             className="w-full md:w-1/2 mt-6 md:mt-0 rounded-lg"
             alt="Section 2"

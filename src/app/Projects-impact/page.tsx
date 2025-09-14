@@ -4,13 +4,10 @@ import { aboutData, projectImpactData } from "@/utils/store";
 
 import HeaderDark from "@/components/header-dark";
 
-export default function Projects() {
-  //
-
+export default function ProjectsImpact() {
   return (
     <>
       <HeaderDark />
-
       <div className="mt-24 px-4 sm:px-6 md:px-28 pb-10">
         <div></div>
 

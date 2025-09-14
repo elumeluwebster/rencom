@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -9,7 +10,7 @@ const HeaderDark = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleClick = () => {
-    router.push("/contact-us");
+    router.push("/Contact-us");
   };
 
   const toggleMobileMenu = () => {
@@ -22,7 +23,7 @@ const HeaderDark = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/">
-              <img
+              <Image
                 src="/assets/icons/logo-dark.svg"
                 alt="remcon dark logo"
                 height={70}
@@ -46,7 +47,7 @@ const HeaderDark = () => {
                 About Us
               </Link>
               <Link
-                href="/projects-impact"
+                href="/Projects-impact"
                 className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
               >
                 Projects & Impacts
@@ -87,13 +88,19 @@ const HeaderDark = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 bg-white rounded-xl shadow-md py-4 px-6 space-y-4">
             <Link
+              href="/home"
+              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+            >
+              Home
+            </Link>
+            <Link
               href="/about-us"
               className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
             >
               About Us
             </Link>
             <Link
-              href="/projects-impact"
+              href="/Projects-impact"
               className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
             >
               Projects & Impacts
@@ -105,7 +112,7 @@ const HeaderDark = () => {
               Our Story
             </Link>
             <Link
-              href="/contact-us"
+              href="/Contact-us"
               className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors"
             >
               Contact Us

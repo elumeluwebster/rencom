@@ -1,32 +1,28 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { slides } from "@/utils/store";
 
 export default function Carousel() {
-  const [visible, setVisible] = useState(4);
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<number>(0);
   const animationRef = useRef<number>(0);
 
-  const cardWidth = 220 + 10; // card width + gap
+  const cardWidth = 220 + 10;
   const extendedSlides = [
     ...slides,
     ...slides,
     ...slides,
     ...slides,
     ...slides,
-  ]; // repeat for seamless loop
+  ];
   const totalWidth = extendedSlides.length * cardWidth;
 
-  const speed = 0.5; // px per frame (adjust for faster/slower scroll)
+  const speed = 0.5;
 
   useEffect(() => {
-    function handleResize() {
-      setVisible(window.innerWidth < 640 ? 1 : 4);
-    }
+    function handleResize() {}
 
-    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

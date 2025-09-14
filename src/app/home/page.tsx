@@ -49,7 +49,7 @@ const Home = () => {
           <h2 className="text-[28px] sm:text-[40px] font-extralight font-geist w-full sm:w-[80%] text-center text-gray-800">
             Driving{" "}
             <span className="font-newsreader italic tracking-tighter">
-              Africa's Shift{" "}
+              Africa&apos;s Shift{" "}
             </span>{" "}
             to Renewable <br className="hidden sm:block" />
             Energy with Inclusion at its Core.{" "}
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
 
         <div className="w-full mt-4 px-4 sm:ml-48 justify-start">
-          <img src="/assets/icons/why-it-matters.svg" alt="why it matters" />
+          <Image src="/assets/icons/why-it-matters.svg" alt="why it matters" />
         </div>
 
         <div className="mt-10 w-[90%] sm:w-full md:w-[60%] min-h-[450px] bg-[#D8E4CA] flex flex-col sm:flex-row gap-3 rounded-[18px] p-2">
@@ -86,12 +86,12 @@ const Home = () => {
                 2
               </div>
               <p className="text-white font-light text-[15px] px-8 mt-2 leading-[24px]">
-                Nigeria's Energy Transition Plan targets{" "}
+                Nigeria&apos;s Energy Transition Plan targets{" "}
                 <br className="hidden sm:block" /> carbon neutrality by 2060
                 while expanding <br className="hidden sm:block" /> modern energy
                 access and decarbonizing <br className="hidden sm:block" /> key
-                sectorsâ€"aligning closely with{" "}
-                <br className="hidden sm:block" /> RenCom's approach.
+                sectors-aligning closely with <br className="hidden sm:block" />{" "}
+                RenCom&apos;s approach.
               </p>
             </div>
           </div>
@@ -114,9 +114,9 @@ const Home = () => {
 
               <p className="text-gray-800 text-sm leading-5">
                 Across Sub-Saharan Africa, nearly 600 million people lack
-                electricity access, and the World Bank's Mission 300 aims to
-                connect 300 million people by 2030 through distributed renewable
-                energy and electrification programs.
+                electricity access, and the World Bank&apos;s Mission 300 aims
+                to connect 300 million people by 2030 through distributed
+                renewable energy and electrification programs.
               </p>
             </div>
           </div>
@@ -170,7 +170,7 @@ const Home = () => {
             </p>
             <p className="text-[16px] text-[#383838CC] font-light leading-[26px]">
               Innovative, affordable, and <span>people-centered </span>
-              approaches to Africa's energy transition.
+              approaches to Africa&apos;s energy transition.
             </p>
           </div>
         </div>

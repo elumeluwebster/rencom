@@ -1,16 +1,13 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
+import Image from "next/image";
 
 import CustomSelect from "@/components/custom-select";
 import HeaderDark from "@/components/header-dark";
 
 export default function Contact() {
   const [reason, setReason] = React.useState<string>("");
-  const nextSectionRef = useRef<HTMLDivElement>(null);
 
-  const handleClick = () => {
-    nextSectionRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <>
       <HeaderDark />
@@ -20,7 +17,7 @@ export default function Contact() {
             <div className="flex-1 flex flex-col gap-4">
               <p className="text-[16px] text-[#0F3D1C]">Partner With Us</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#0F3D1C] leading-snug">
-                Let’s Power <br />
+                Let&apos;s Power <br />
                 Change Together{" "}
               </h2>
 
@@ -31,52 +28,69 @@ export default function Contact() {
 
               <div className="flex flex-row mb-10 items-center gap-4 mt-4">
                 <a href="#">
-                  <img
+                  <Image
                     src="/assets/icons/gmail.svg"
                     alt="Gmail"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
-                  <img
+                  <Image
                     src="/assets/icons/youtube.svg"
                     alt="YouTube"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
-                  <img
+                  <Image
                     src="/assets/icons/twitter.svg"
                     alt="Twitter"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
-                  <img
+                  <Image
                     src="/assets/icons/instagram.svg"
                     alt="Instagram"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
-                  <img
+                  <Image
                     src="/assets/icons/facebook.svg"
                     alt="Facebook"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
-                  <img
+                  <Image
                     src="/assets/icons/linkedin.svg"
                     alt="LinkedIn"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
               </div>
 
               <div className=" w-full md:w-[50%] flex flex-col   gap-4 rounded-[16px] p-2 bg-[#3F403C] mt-8">
                 <div className="flex gap-2">
-                  <img src="/assets/icons/star.svg" alt="" />
+                  <Image
+                    src="/assets/icons/star.svg"
+                    width={10}
+                    height={10}
+                    alt=""
+                  />
                   <p className="text-[12px] text-white">4.5</p>
                 </div>
                 <p className="text-white leading-[22px] text-[14px] font-light">
@@ -92,7 +106,7 @@ export default function Contact() {
                     </p>
                   </div>
                   <div className="flex-1 rounded-[32px]">
-                    <img
+                    <Image
                       src="/assets/images/malwena.png"
                       width={80}
                       height={100}
@@ -109,7 +123,7 @@ export default function Contact() {
               <div className="bg-[#E6E8DD] p-6 sm:p-8 rounded-2xl shadow-md">
                 <h3 className="text-[18px]  font-regular text-[#000000] mb-6 sm:mb-8">
                   Got something in mind? <br />
-                  Let’s bring it to life—begin with a hello.{" "}
+                  Let&apos;s bring it to life—begin with a hello.{" "}
                 </h3>
                 <form className="space-y-6 sm:space-y-8">
                   <label className="block">
@@ -166,12 +180,13 @@ export default function Contact() {
                   </label>
                   <div className="flex justify-between items-center">
                     <p className="w-[40%] text-[12px] font-extralight">
-                      You’ll hear from us within 1–2 days. <br />
-                      We’re excited to connect!
+                      You&apos;ll hear from us within 1–2 days. <br />
+                      We&apos;re excited to connect!
                     </p>
 
                     <button
                       type="submit"
+                      onClick={() => {}}
                       className="bg-[#B6E400] cursor-pointer text-black text-[13px] p-3 rounded-[32px] w-[200px] sm:w-auto"
                     >
                       Send message{" "}
@@ -182,9 +197,11 @@ export default function Contact() {
             </div>
           </div>
 
-          <img
+          <Image
             src="/assets/images/topographic.png"
             alt=""
+            width={400}
+            height={240}
             className="hidden md:block absolute left-0 -bottom-24 pointer-events-none select-none w-[400px] h-[240px] object-cover object-top overflow-hidden"
           />
         </section>
