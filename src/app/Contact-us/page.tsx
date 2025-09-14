@@ -1,96 +1,31 @@
-"use client";
 import React from "react";
+
+import HeaderDark from "@/components/header-dark";
 import Image from "next/image";
 
-import CustomSelect from "@/components/custom-select";
-import HeaderDark from "@/components/header-dark";
-
 export default function Contact() {
-  const [reason, setReason] = React.useState<string>("");
-
   return (
     <>
       <HeaderDark />
       <div>
         <section className="relative h-auto mt-20 mb-24 px-4 sm:px-6 md:px-28 pb-40">
           <div className="flex flex-col md:flex-row gap-12 md:gap-16">
-            <div className="flex-1 flex flex-col gap-4">
-              <p className="text-[16px] text-[#0F3D1C]">Partner With Us</p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#0F3D1C] leading-snug">
-                Let&apos;s Power <br />
+            <div className="flex-1 flex flex-col gap-4  ">
+              <p className=" tex-[16px] text-[#0F3D1C]">Partner With Us</p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-regular text-[#0F3D1C] leading-snug">
+                Let’s Power <br />
                 Change Together{" "}
               </h2>
 
-              <p className="text-[16px] text-[#000000] font-extralight leading-[30px]">
-                We collaborate with investors, NGOs, <br /> Governments, and
-                Communities to accelerate <br /> clean energy adoption.
+              <p className="text-[16px] text-[#000000] font-light leading-[30px]">
+                We collaborate with investors, NGOs, governments, and <br />
+                communities to accelerate clean energy adoption. Partner <br />
+                with us to create lasting impact for people and the planet.
               </p>
-
-              <div className="flex flex-row mb-10 items-center gap-4 mt-4">
-                <a href="#">
-                  <Image
-                    src="/assets/icons/gmail.svg"
-                    alt="Gmail"
-                    className="h-12 w-12"
-                    width={48}
-                    height={48}
-                  />
-                </a>
-                <a href="#">
-                  <Image
-                    src="/assets/icons/youtube.svg"
-                    alt="YouTube"
-                    className="h-12 w-12"
-                    width={48}
-                    height={48}
-                  />
-                </a>
-                <a href="#">
-                  <Image
-                    src="/assets/icons/twitter.svg"
-                    alt="Twitter"
-                    className="h-12 w-12"
-                    width={48}
-                    height={48}
-                  />
-                </a>
-                <a href="#">
-                  <Image
-                    src="/assets/icons/instagram.svg"
-                    alt="Instagram"
-                    className="h-12 w-12"
-                    width={48}
-                    height={48}
-                  />
-                </a>
-                <a href="#">
-                  <Image
-                    src="/assets/icons/facebook.svg"
-                    alt="Facebook"
-                    className="h-12 w-12"
-                    width={48}
-                    height={48}
-                  />
-                </a>
-                <a href="#">
-                  <Image
-                    src="/assets/icons/linkedin.svg"
-                    alt="LinkedIn"
-                    className="h-12 w-12"
-                    width={48}
-                    height={48}
-                  />
-                </a>
-              </div>
 
               <div className=" w-full md:w-[50%] flex flex-col   gap-4 rounded-[16px] p-2 bg-[#3F403C] mt-8">
                 <div className="flex gap-2">
-                  <Image
-                    src="/assets/icons/star.svg"
-                    width={10}
-                    height={10}
-                    alt=""
-                  />
+                  <img src="/assets/icons/star.svg" alt="" />
                   <p className="text-[12px] text-white">4.5</p>
                 </div>
                 <p className="text-white leading-[22px] text-[14px] font-light">
@@ -108,52 +43,56 @@ export default function Contact() {
                   <div className="flex-1 rounded-[32px]">
                     <Image
                       src="/assets/images/malwena.png"
-                      width={80}
+                      width={100}
                       height={100}
+                      objectFit="cover"
                       alt="malwana picture"
-                      className="rounded-[32px] object-cover"
+                      className="rounded-[32px]"
                     />
                   </div>
                 </div>
               </div>
             </div>
-            {/* forms  */}
 
             <div className="flex-1">
               <div className="bg-[#E6E8DD] p-6 sm:p-8 rounded-2xl shadow-md">
                 <h3 className="text-[18px]  font-regular text-[#000000] mb-6 sm:mb-8">
                   Got something in mind? <br />
-                  Let&apos;s bring it to life—begin with a hello.{" "}
+                  Let’s bring it to life—begin with a hello.{" "}
                 </h3>
                 <form className="space-y-6 sm:space-y-8">
                   <label className="block">
-                    <span className="block mb-2 text-[14px] font-extralight text-[#1A1A17]">
-                      FULL NAME
+                    <span className="block mb-2 text-[14px] font-normal text-[#1A1A17]">
+                      Full Name
                     </span>
                     <input
                       type="text"
                       placeholder="Your name here"
-                      className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                      className="w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA]"
                     />
                   </label>
 
-                  <div className="flex flex-col sm:flex-row gap-2">
-                    <label className="block w-full sm:w-1/2">
-                      <span className="block mb-2 text-[14px] font-extralight text-[#1A1A17]">
-                        EMAIL
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <label className="block">
+                      <span className="block mb-2 text-[14px] font-normal text-[#1A1A17]">
+                        Email{" "}
                       </span>
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA]"
                       />
                     </label>
 
-                    <label className="block w-full sm:w-1/2">
-                      <span className="block mb-2 text-[14px] font-geist font-extralight text-[#1A1A17]">
-                        SELECT REASON
+                    <label className="block">
+                      <span className="block mb-2 text-[14px] font-normal text-[#1A1A17]">
+                        Partnership Goal{" "}
                       </span>
-                      <CustomSelect value={reason} onChange={setReason} />
+                      <input
+                        type="text"
+                        placeholder="Select a goal"
+                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded  resize-none bg-[#F4F3EA] text-black"
+                      />
                     </label>
                   </div>
 
@@ -163,15 +102,14 @@ export default function Contact() {
                     </span>
                     <textarea
                       placeholder="Type your message here..."
-                      className="w-full p-3 border border-[#EDEDED] resize-none bg-[#F4F3EA] text-black rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
-                      rows={10}
-                    ></textarea>
+                      className="w-full p-3 border border-[#EDEDED]  resize-none bg-[#F4F3EA] text-black  rounded-[16px]"
+                      rows={8}></textarea>
                   </label>
 
                   <label className="flex items-center w-full space-x-2">
                     <input
                       type="checkbox"
-                      className="mt-1 h-5 w-5 accent-[#B6E400] border-gray-300 cursor-pointer rounded-[8px] focus:ring-[#0F3D1C] focus:border-[#0F3D1C]"
+                      className="mt-1 h-5 w-5 text-green-600 border-gray-300 rounded-[8px] focus:ring-green-500"
                     />
                     <span className="text-[12px] font-normal text-[#1A1A17]">
                       I agree to let RenCom securely store my details for
@@ -179,16 +117,14 @@ export default function Contact() {
                     </span>
                   </label>
                   <div className="flex justify-between items-center">
-                    <p className="w-[40%] text-[12px] font-extralight">
-                      You&apos;ll hear from us within 1–2 days. <br />
-                      We&apos;re excited to connect!
+                    <p className="w-[40%] text-[12px] font-light">
+                      You’ll hear from us within 1–2 days. <br />
+                      We’re excited to connect!
                     </p>
 
                     <button
                       type="submit"
-                      onClick={() => {}}
-                      className="bg-[#B6E400] cursor-pointer text-black text-[13px] p-3 rounded-[32px] w-[200px] sm:w-auto"
-                    >
+                      className="bg-[#B6E400] cursor-pointer text-black text-[13px] p-3 rounded-[32px] w-[200px] sm:w-auto">
                       Send message{" "}
                     </button>
                   </div>
@@ -197,17 +133,15 @@ export default function Contact() {
             </div>
           </div>
 
-          <Image
+          <img
             src="/assets/images/topographic.png"
             alt=""
-            width={400}
-            height={240}
-            className="hidden md:block absolute left-0 -bottom-24 pointer-events-none select-none w-[400px] h-[240px] object-cover object-top overflow-hidden"
+            className="hidden md:block absolute left-0 -bottom-24 pointer-events-none select-none w-[400px] h-auto"
           />
         </section>
 
-        <section className="bg-[#D8E4CA] w-full py-36 px-4 sm:px-6 md:px-28">
-          <div className="flex flex-col md:flex-row gap-12 md:gap-20 px-10 md:px-4">
+        <section className="bg-[#D8E4CA] w-full py-16 px-4 sm:px-6 md:px-28">
+          <div className="flex flex-col md:flex-row gap-12 md:gap-20">
             <div className="flex-1">
               <p className="text-[#0F3D1C] text-lg sm:text-xl font-base">
                 Contact Us

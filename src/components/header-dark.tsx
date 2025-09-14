@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { HiMenu, HiX } from "react-icons/hi";
 
 const HeaderDark = () => {
   const router = useRouter();
@@ -24,18 +23,18 @@ const HeaderDark = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/assets/icons/logo-dark.svg"
-                alt="remcon dark logo"
+                src="/assets/icons/logo-light.svg"
+                alt="remcon light logo"
                 height={70}
                 width={120}
               />
             </Link>
           </div>
 
-          <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl font-regular font-questrial">
+          <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl font-normal font-questrial">
             <div className="flex items-baseline space-x-8">
               <Link
-                href="/home"
+                href="/"
                 className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
               >
                 Home
@@ -72,53 +71,69 @@ const HeaderDark = () => {
             <div className="md:hidden">
               <button
                 onClick={toggleMobileMenu}
-                className="text-gray-700 focus:outline-none"
+                className="relative h-10 w-10 text-gray-700 focus:outline-none rounded-lg p-2 transition-all duration-200"
                 aria-label="Toggle Menu"
               >
-                {isMobileMenuOpen ? (
-                  <HiX className="h-6 w-6" />
-                ) : (
-                  <HiMenu className="h-6 w-6" />
-                )}
+                <div className="w-6 h-6">
+                  <span
+                    className={`absolute block w-6 h-0.5 bg-white rounded-full transform transition-all duration-300 ease-in-out top-[6px] left-0 ${
+                      isMobileMenuOpen ? "rotate-45 translate-y-[5px]" : ""
+                    }`}
+                  />
+                  <span
+                    className={`absolute block w-6 h-0.5 bg-white rounded-full transition-opacity duration-300 ease-in-out top-[11px] left-0 ${
+                      isMobileMenuOpen ? "opacity-0" : ""
+                    }`}
+                  />
+                  <span
+                    className={`absolute block w-6 h-0.5 bg-white rounded-full transform transition-all duration-300 ease-in-out top-[16px] left-0 ${
+                      isMobileMenuOpen ? "-rotate-45 -translate-y-[5px]" : ""
+                    }`}
+                  />
+                </div>
               </button>
             </div>
           </div>
         </div>
 
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 bg-white rounded-xl shadow-md py-4 px-6 space-y-4">
-            <Link
-              href="/home"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
-            >
-              Home
-            </Link>
-            <Link
-              href="/about-us"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
-            >
-              About Us
-            </Link>
-            <Link
-              href="/Projects-impact"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
-            >
-              Projects & Impacts
-            </Link>
-            <Link
-              href="/our-story"
-              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
-            >
-              Our Story
-            </Link>
-            <Link
-              href="/Contact-us"
-              className="w-full hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium transition-colors"
-            >
-              Contact Us
-            </Link>
-          </div>
-        )}
+        <div
+          className={`md:hidden mt-4 bg-white rounded-xl shadow-lg py-4 px-6 space-y-4 transition-all duration-300 ease-in-out transform origin-top ${
+            isMobileMenuOpen
+              ? "opacity-100 scale-y-100 visible"
+              : "opacity-0 scale-y-95 invisible"
+          }`}
+        >
+          <Link
+            href="/"
+            className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+          >
+            Home
+          </Link>
+          <Link
+            href="/about-us"
+            className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+          >
+            About Us
+          </Link>
+          <Link
+            href="/Projects-impact"
+            className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+          >
+            Projects & Impacts
+          </Link>
+          <Link
+            href="/our-story"
+            className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+          >
+            Our Story
+          </Link>
+          <Link
+            href="/Contact-us"
+            className="block hover:bg-[#25610c] text-gray-700 py-2 text-base font-medium"
+          >
+            Contact Us
+          </Link>
+        </div>
       </div>
     </nav>
   );

@@ -34,7 +34,7 @@ const HeaderLight = () => {
           <div className="bg-white hidden md:flex items-center py-3 px-8 rounded-xl font-normal font-questrial">
             <div className="flex items-baseline space-x-8">
               <Link
-                href="/home"
+                href="/"
                 className="text-gray-700 hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
               >
                 Home
@@ -104,7 +104,7 @@ const HeaderLight = () => {
           }`}
         >
           <Link
-            href="/home"
+            href="/"
             className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
           >
             Home
