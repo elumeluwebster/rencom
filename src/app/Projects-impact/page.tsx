@@ -49,7 +49,7 @@ export default function ProjectsImpact() {
             ))}
 
             <div
-              className={`group relative w-full h-[350px] rounded-lg overflow-hidden p-2 bg-cover bg-center
+              className={`group relative w-full h-[365px] rounded-lg overflow-hidden p-2 bg-cover bg-center
       sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
               style={{
                 backgroundImage: `url('/assets/images/impact-metrics.png')`,
