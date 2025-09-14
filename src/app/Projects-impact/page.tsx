@@ -20,7 +20,8 @@ export default function ProjectsImpact() {
         sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
                 style={{
                   backgroundImage: `url('${items.src}.png')`,
-                }}>
+                }}
+              >
                 {/* Title */}
                 <div className="w-fit relative z-10">
                   <div className="flex flex-col gap-2">
@@ -42,7 +43,8 @@ export default function ProjectsImpact() {
                 <div className="relative z-10 w-full text-white p-3 mt-auto transition-all duration-500 group-hover:-translate-y-4 flex flex-col items-end justify-end h-full">
                   <div
                     className="flex items-start justify-end gap-2 mt-1 opacity-0 max-h-0 overflow-hidden 
-            transition-all duration-300 group-hover:opacity-100 group-hover:max-h-35">
+            transition-all duration-300 group-hover:opacity-100 group-hover:max-h-35"
+                  >
                     <p className="text-[12px] text-[#F4F3EA] self-end max-w-[50%] text-start">
                       {items.Details}
                     </p>
@@ -53,18 +55,20 @@ export default function ProjectsImpact() {
 
             {/* Extra images */}
             <div
-              className={`group relative w-full h-[350px] rounded-lg overflow-hidden p-2 bg-cover bg-center
+              className={`group relative w-full h-[380px] rounded-lg overflow-hidden p-2 bg-cover bg-center
       sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
               style={{
                 backgroundImage: `url('/assets/images/impact-metrics.png')`,
-              }}></div>
+              }}
+            ></div>
 
             <div
-              className={`group relative w-full h-[350px] rounded-lg overflow-hidden p-2 bg-cover bg-center
+              className={`group relative w-full h-[380px] rounded-lg overflow-hidden p-2 bg-cover bg-center
       sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
               style={{
                 backgroundImage: `url('/assets/images/phc-improved.png')`,
-              }}></div>
+              }}
+            ></div>
           </div>
         </section>
       </div>
