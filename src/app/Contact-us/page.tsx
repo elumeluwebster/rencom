@@ -32,6 +32,8 @@ export default function Contact() {
                     src="/assets/icons/gmail.svg"
                     alt="Gmail"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
@@ -39,6 +41,8 @@ export default function Contact() {
                     src="/assets/icons/youtube.svg"
                     alt="YouTube"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
@@ -46,6 +50,8 @@ export default function Contact() {
                     src="/assets/icons/twitter.svg"
                     alt="Twitter"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
@@ -53,6 +59,8 @@ export default function Contact() {
                     src="/assets/icons/instagram.svg"
                     alt="Instagram"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
@@ -60,6 +68,8 @@ export default function Contact() {
                     src="/assets/icons/facebook.svg"
                     alt="Facebook"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
                 <a href="#">
@@ -67,13 +77,20 @@ export default function Contact() {
                     src="/assets/icons/linkedin.svg"
                     alt="LinkedIn"
                     className="h-12 w-12"
+                    width={48}
+                    height={48}
                   />
                 </a>
               </div>
 
               <div className=" w-full md:w-[50%] flex flex-col   gap-4 rounded-[16px] p-2 bg-[#3F403C] mt-8">
                 <div className="flex gap-2">
-                  <Image src="/assets/icons/star.svg" alt="" />
+                  <Image
+                    src="/assets/icons/star.svg"
+                    width={10}
+                    height={10}
+                    alt=""
+                  />
                   <p className="text-[12px] text-white">4.5</p>
                 </div>
                 <p className="text-white leading-[22px] text-[14px] font-light">
@@ -169,6 +186,7 @@ export default function Contact() {
 
                     <button
                       type="submit"
+                      onClick={() => {}}
                       className="bg-[#B6E400] cursor-pointer text-black text-[13px] p-3 rounded-[32px] w-[200px] sm:w-auto"
                     >
                       Send message{" "}
@@ -182,6 +200,8 @@ export default function Contact() {
           <Image
             src="/assets/images/topographic.png"
             alt=""
+            width={400}
+            height={240}
             className="hidden md:block absolute left-0 -bottom-24 pointer-events-none select-none w-[400px] h-[240px] object-cover object-top overflow-hidden"
           />
         </section>
