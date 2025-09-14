@@ -1,9 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 import { aboutData } from "@/utils/store";
 import HeaderDark from "@/components/header-dark";
 
 const OurStory = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleCardClick = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
   return (
     <>
       <HeaderDark />
@@ -77,14 +83,20 @@ const OurStory = () => {
             {aboutData.map((items) => (
               <div
                 key={items.num}
+                onClick={() => handleCardClick(items.num)}
                 className={`group relative flex-1 basis-full h-[350px] rounded-2xl overflow-hidden bg-cover bg-center
       sm:basis-[calc(50%-0.5rem)] sm:h-[450px]`}
                 style={{
                   backgroundImage: `url('/assets/images/sustainable${items.num}.png')`,
-                }}>
+                }}
+              >
                 <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-                <div className="relative z-10 w-full text-white p-3 mt-auto transition-all duration-400 group-hover:-translate-y-4 flex flex-col justify-end h-full">
+                <div
+                  className={`relative z-10 w-full text-white p-3 mt-auto transition-all duration-400 group-hover:-translate-y-4 flex flex-col justify-end h-full ${
+                    activeIndex === items.num ? "-translate-y-4" : ""
+                  }`}
+                >
                   <div className="w-fit">
                     <p className="inline-block text-[26px] text-[#a4a0a0] font-bold font-anton transition-colors duration-300 group-hover:bg-black group-hover:text-white group-hover:p-2 rounded">
                       {items.Tittle}
@@ -92,8 +104,11 @@ const OurStory = () => {
                   </div>
 
                   <div
-                    className="flex items-start gap-2 mt-1 opacity-0 max-h-0 overflow-hidden 
-        transition-all duration-300 group-hover:opacity-100 group-hover:max-h-28">
+                    className={`flex items-start gap-2 mt-1 opacity-0 max-h-0 overflow-hidden 
+                      transition-all duration-300 group-hover:opacity-100 group-hover:max-h-28 ${
+                        activeIndex === items.num ? "opacity-100 max-h-28" : ""
+                      }`}
+                  >
                     <div className="w-2 bg-green-500 h-full rounded-full"></div>
 
                     <p className="text-[12px] text-[#F4F3EA] max-w-[50%]">

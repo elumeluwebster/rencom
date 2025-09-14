@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
       </section>
 
-      <footer className="bg-[#0B2E15] font-geist mt-0 py-8">
+      <footer className="bg-[#0B2E15] font-geist mt-0 pt-8 pb-0">
         <div className="px-2 max-w-screen-xl mx-auto">
           <hr className="border-none h-[0.5px] mt-10 bg-[#134E24] mb-6" />
 
@@ -114,7 +114,7 @@ const Footer = () => {
 
           <hr className="border-none h-[0.5px] mt-10 bg-[#134E24] mb-6" />
 
-          <div className="text-[#bcbcbc] font-geist font-extralight pt-4 text-left px-6 md:px-28 text-sm leading-relaxed">
+          <div className="text-[#bcbcbc] font-geist font-extralight pt-4 text-left px-6 md:px-0.5 text-sm leading-relaxed">
             <p>
               RenCom is committed to{" "}
               <span className="font-bold text-white">
@@ -129,7 +129,19 @@ const Footer = () => {
             </p>
           </div>
 
-          <div
+          <div className="flex justify-center items-center px-4 overflow-x-auto pb-0 mb-0 bottom-20">
+            <div className="relative mt-10 w-[1280px] sm:w-[1200px] md:w-[1350px] h-[80px] sm:h-[120px] md:h-[280px]">
+              <Image
+                src="/assets/images/rencom-logo.png"
+                alt="Rencom Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
+
+          {/* <div
             className="text-center mt-10 font-geist font-extrabold tracking-tight bg-clip-text text-transparent px-4 overflow-x-auto"
             style={{
               backgroundImage: "linear-gradient(to right, #087B37, #7ADC51)",
@@ -144,7 +156,7 @@ const Footer = () => {
             <p className="text-[80px] sm:text-[120px] md:text-[280px] leading-none whitespace-nowrap">
               RENCOM
             </p>
-          </div>
+          </div> */}
         </div>
       </footer>
     </section>

@@ -132,7 +132,7 @@ const Landing = () => {
           <div className="flex-1 min-h-[300px] sm:h-full rounded-[18px] p-2 bg-[#A4C085] relative flex items-center justify-start">
             <div className="w-[60%] h-full">
               <Image
-                src="/assets/images/storage.png"
+                src="/assets/images/sub-sah.png"
                 alt="Clean Cooking Solutions"
                 width={200}
                 height={200}
@@ -140,7 +140,7 @@ const Landing = () => {
               />
             </div>
 
-            <div className="absolute bottom-[4%] left-[10px] sm:left-[70px] bg-[#C4D6B0] rounded-lg shadow-lg w-[85%] sm:w-[80%] p-4 flex flex-col gap-3">
+            <div className="absolute bottom-[1.5%] left-[10px] sm:left-[90px] bg-[#C4D6B0] rounded-lg shadow-lg w-[85%] sm:w-[80%] p-4 flex flex-col gap-3">
               <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0F3D1C] text-white font-bold">
                 3
               </div>
