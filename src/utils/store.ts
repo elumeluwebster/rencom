@@ -113,17 +113,17 @@ export const projectImpactData = [
     tittle2: "SOLAR MINI-GRIDS",
     Details:
       "Powering rural communities across Kwara state through minigrid projects to improve the lives of inhabitants, reduce carbon emissions and boost the local productivity of the farmers.",
-    src: "/assets/images/kwara.png",
+    src: "/assets/images/Component18",
   },
 
   {
     num: 2,
     Tittle: "AGR0-BOOST",
-    tittle2: "CTIVATION",
+    tittle2: "ACTIVATION",
 
     Details:
-      "Bringing light and connectivity to underserved farming communities by deploying solar-powered productive use  solutions like cold storage systems and solar pumping machines for irrigation to replace hazardous fuel-powered alternatives.",
-    src: "/assets/images/agro.png",
+      "Bringing light and connectivity to underserved farming communities by deploying solar-powered productive use solutions like cold storage systems and solar pumping machines for irrigation to replace hazardous fuel-powered alternatives.",
+    src: "/assets/images/Component19",
   },
 
   {
@@ -133,7 +133,7 @@ export const projectImpactData = [
 
     Details:
       "Deploying clean cookstove or LPG initiatives through female associations and communities in pere-urban neighbourhoods, improving health and reducing environmental harm.",
-    src: "/assets/images/clean.png",
+    src: "/assets/images/Component20",
   },
   {
     num: 4,
@@ -143,6 +143,6 @@ export const projectImpactData = [
 
     Details:
       "Power Primary Health Care centres in Western Nigeria to reduce the rate of avoidable death from facility inefficiencies.",
-    src: "/assets/images/solar-life.png",
+    src: "/assets/images/Component21",
   },
 ];
