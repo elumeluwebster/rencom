@@ -88,6 +88,12 @@ const HeaderDark = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 bg-white rounded-xl shadow-md py-4 px-6 space-y-4">
             <Link
+              href="/home"
+              className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
+            >
+              Home
+            </Link>
+            <Link
               href="/about-us"
               className="block text-gray-700 hover:text-[#387F1A] text-base font-medium"
             >
