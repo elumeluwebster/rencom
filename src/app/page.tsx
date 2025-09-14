@@ -85,7 +85,12 @@ const Landing = () => {
         </div>
 
         <div className="w-full mt-4 px-4 sm:ml-48 justify-start">
-          <Image src="/assets/icons/why-it-matters.svg" alt="why it matters" />
+          <Image
+            src="/assets/icons/why-it-matters.svg"
+            height={100}
+            width={100}
+            alt="why it matters"
+          />
         </div>
 
         <div className="mt-10 w-[90%] sm:w-full md:w-[60%] min-h-[450px] bg-[#D8E4CA] flex flex-col sm:flex-row gap-3 rounded-[18px] p-2">
