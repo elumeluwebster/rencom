@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { projectImpactData } from "@/utils/store";
+import React, { useState } from "react";
+import { aboutData, projectImpactData } from "@/utils/store";
 
 import HeaderDark from "@/components/header-dark";
 
@@ -56,9 +56,7 @@ export default function ProjectsImpact() {
 
             {/* Extra images */}
             <div
-              className={`group relative w-full h-[380px] rounded-lg overflow-hidden p-2 bg-cover bg-center
-
-      sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
+              className={`group relative w-full h-[380px] rounded-lg overflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
               style={{
                 backgroundImage: `url('/assets/images/impact-metrics.png')`,
               }}
