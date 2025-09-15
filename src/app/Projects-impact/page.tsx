@@ -56,14 +56,14 @@ export default function ProjectsImpact() {
 
             {/* Extra images */}
             <div
-              className={`group relative w-full h-[380px] rounded-lg overflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
+              className={`group relative w-full h-[430px] rounded-lg overflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
               style={{
                 backgroundImage: `url('/assets/images/impact-metrics.png')`,
               }}
             ></div>
 
             <div
-              className={`group relative w-full h-[380px] rounded-lg overflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
+              className={`group relative w-full h-[430px] rounded-lg overflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[450px] flex flex-col justify-between`}
               style={{
                 backgroundImage: `url('/assets/images/phc-improved.png')`,
               }}
