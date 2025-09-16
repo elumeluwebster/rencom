@@ -10,8 +10,6 @@ export default function ProjectsImpact() {
     <>
       <HeaderDark />
       <div className="mt-24 px-4 sm:px-6 md:px-28 pb-10">
-        <div></div>
-
         <section className="flex  md:flex-row items-center gap-4 md:gap-4 mt-12 mb-3">
           <div className="flex flex-wrap gap-4 w-full px-4 mb-20">
             {projectImpactData.map((items) => (
