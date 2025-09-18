@@ -21,12 +21,12 @@ const Landing = () => {
 
   return (
     <div>
-      <section className="relative bg-gradient-to-b from-[#00330F] to-[#000000] h-screen w-full">
+      <section className="relative bg-gradient-to-b from-[#00330F] to-[#000000] h-[700px] sm:h-[1000px] md:h-[900px] lg:h-[1025px] w-full">
         <div className="absolute top-0 left-0 w-full">
           <HeaderLight />
         </div>
 
-        <div className="flex h-full w-full flex-col items-center justify-center text-center px-4">
+        <div className="flex pt-30 w-full flex-col items-center justify-center text-center px-4 div1">
           <h2 className="text-[73px] font-geist font-normal text-white leading-[83px]">
             Sustainable <br /> <span className="">Energy Solutions</span>
           </h2>
@@ -37,10 +37,10 @@ const Landing = () => {
             enabling economic growth <br /> and resilient development.
           </p>
 
-          <div className="mt-13 flex flex-row gap-4">
+          <div className="mt-13 flex flex-row gap-4 z-50">
             <div
               onClick={handleClick}
-              className="bg-[#EAFE45] items-center justify-between flex flex-row px-6 gap-5 py-2 rounded-[30px] cursor-pointer"
+              className="bg-[#EAFE45] hover:bg-[#efff62] items-center justify-between flex flex-row px-6 gap-5 py-2 rounded-[30px] cursor-pointer"
             >
               <span className="text-[#00330F]">Explore More</span>
               <div className="w-10 h-10 -mr-4 flex items-center justify-center bg-[#00330F] rounded-full transition-colors duration-300">
@@ -56,7 +56,7 @@ const Landing = () => {
 
             <div
               onClick={handleProjects}
-              className="bg-[#EFF3DF15] border-[0.5px] border-[#EFF3DF85] items-center justify-between flex flex-row px-6 gap-5 py-2 rounded-[30px] cursor-pointer"
+              className="bg-[#EFF3DF15] hover:bg-[#95919115] border-[0.5px] border-[#EFF3DF85] items-center justify-between flex flex-row px-6 gap-5 py-2 rounded-[30px] cursor-pointer"
             >
               <span className="text-[#FFF]">See Projects</span>
               <div className="w-10 h-10 -mr-4 flex items-center justify-center bg-[#EFF3DF] rounded-full transition-colors duration-300">
@@ -72,7 +72,14 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-full h-[1200px] z-0 hidden sm:block">
+          <Image
+            src="/assets/images/group-photo.png"
+            alt="group pic"
+            fill
+            className="object-contain object-bottom"
+          />
+        </div>
       </section>
 
       <FadeInSection>
