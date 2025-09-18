@@ -10,7 +10,7 @@ import FadeInSection from "@/utils/utils";
 const Landing = () => {
   const route = useRouter();
   const handleProjects = () => {
-    route.push("/projects-impact");
+    route.push("/Projects-impact");
   };
 
   const nextSectionRef = useRef<HTMLDivElement>(null);
@@ -21,17 +21,14 @@ const Landing = () => {
 
   return (
     <div>
-      <section className="relative bg-[url('/assets/images/engineers-landing.png')] bg-cover bg-[#EEEDE4] bg-center bg-no-repeat h-screen w-full">
+      <section className="relative bg-gradient-to-b from-[#00330F] to-[#000000] h-screen w-full">
         <div className="absolute top-0 left-0 w-full">
           <HeaderLight />
         </div>
 
         <div className="flex h-full w-full flex-col items-center justify-center text-center px-4">
           <h2 className="text-[73px] font-geist font-normal text-white leading-[83px]">
-            Sustainable <br />{" "}
-            <span className="font-newsreader tracking-tighter italic font-light">
-              Energy Solutions
-            </span>
+            Sustainable <br /> <span className="">Energy Solutions</span>
           </h2>
 
           <p className="font-geist font-extralight mt-6 max-w-2xl text-[#F2F2F2] text-lg">
@@ -40,31 +37,42 @@ const Landing = () => {
             enabling economic growth <br /> and resilient development.
           </p>
 
-          <div className="mt-13 flex">
+          <div className="mt-13 flex flex-row gap-4">
             <div
               onClick={handleClick}
-              className="bg-[#E1FCAD] px-6 py-3 rounded-[30px] cursor-pointer"
+              className="bg-[#EAFE45] items-center justify-between flex flex-row px-6 gap-5 py-2 rounded-[30px] cursor-pointer"
             >
-              Explore More
+              <span className="text-[#00330F]">Explore More</span>
+              <div className="w-10 h-10 -mr-4 flex items-center justify-center bg-[#00330F] rounded-full transition-colors duration-300">
+                <Image
+                  src="/assets/icons/down-right-arrow-white.svg"
+                  width={20}
+                  height={20}
+                  alt=""
+                  className="cursor-pointer stroke-white fill-white"
+                />
+              </div>
             </div>
-            <button
-              onClick={handleClick}
-              className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300"
+
+            <div
+              onClick={handleProjects}
+              className="bg-[#EFF3DF15] border-[0.5px] border-[#EFF3DF85] items-center justify-between flex flex-row px-6 gap-5 py-2 rounded-[30px] cursor-pointer"
             >
-              <Image
-                src="/assets/icons/down-right-arrow.svg"
-                width={20}
-                height={20}
-                alt=""
-                className="cursor-pointer"
-              />
-            </button>
+              <span className="text-[#FFF]">See Projects</span>
+              <div className="w-10 h-10 -mr-4 flex items-center justify-center bg-[#EFF3DF] rounded-full transition-colors duration-300">
+                <Image
+                  src="/assets/icons/new-up-right-arrow.svg"
+                  width={20}
+                  height={20}
+                  alt=""
+                  className="cursor-pointer"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-          <p className="text-[18px] font-ptmono text-white">SCROLL DOWN</p>
-        </div>
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2"></div>
       </section>
 
       <FadeInSection>
@@ -99,11 +107,17 @@ const Landing = () => {
             <div className="flex sm:w-[44%] md:w-[44%] lg:w-[44%] w-full flex-row sm:flex-col md:flex-col lg:flex-col gap-3">
               <div className="flex-1 relative px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#C4D6B0]">
                 <div className="flex items-center ml-5 justify-center w-8 h-8 rounded-full bg-[#0F3D1C] text-white font-bold">
-                  1
+                  <Image
+                    src="/assets/icons/energy-challenge.svg"
+                    width={25}
+                    height={25}
+                    alt="bulb"
+                  />
                 </div>
                 <p className="text-[#0F3D1C] text-[15px] px-7 leading-[24px] mt-2">
-                  There is a huge access to energy challenge faced by Nigerians,
-                  both from the availability and affordability perspectives.
+                  There is a huge access to{" "}
+                  <strong>energy challenge faced by Nigerians</strong>, both
+                  from the availability and affordability perspectives.
                   Alternative solutions are neither healthy, affordable, nor
                   sustainable.
                 </p>
@@ -116,14 +130,20 @@ const Landing = () => {
                 />
               </div>
 
-              <div className="flex-1 px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#0B2520]">
+              <div className="flex-1 px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#F0DC83]">
                 <div className="flex items-center ml-5 mb-2 justify-center w-8 h-8 rounded-full bg-[#0F3D1C] text-white font-bold">
-                  2
+                  <Image
+                    src="/assets/icons/carbon-neutral.svg"
+                    width={23}
+                    height={23}
+                    alt="carbon neutral"
+                  />
                 </div>
-                <p className="text-white font-light text-[15px] px-8 mt-2 leading-[24px]">
+                <p className="text-[#1B1700] font-light text-[15px] px-8 mt-2 leading-[24px]">
                   Nigeria&apos;s Energy Transition Plan targets{" "}
-                  <br className="hidden sm:block" /> carbon neutrality by 2060
-                  while expanding <br className="hidden sm:block" /> modern
+                  <br className="hidden sm:block" />{" "}
+                  <strong className="font-bold">carbon neutrality</strong> by
+                  2060 while expanding <br className="hidden sm:block" /> modern
                   energy access and decarbonizing{" "}
                   <br className="hidden sm:block" /> key sectors&mdash;aligning
                   closely with <br className="hidden sm:block" /> RenCom&apos;s
@@ -143,16 +163,24 @@ const Landing = () => {
                 />
               </div>
 
-              <div className="absolute bottom-[1.5%] left-[10px] sm:left-[90px] bg-[#C4D6B0] rounded-lg shadow-lg w-[85%] sm:w-[80%] p-4 flex flex-col gap-3">
+              <div className="absolute bottom-[1.5%] left-[10px] sm:left-[90px] bg-[#F1EDDA] rounded-lg shadow-lg w-[85%] sm:w-[80%] p-4 flex flex-col gap-3">
                 <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0F3D1C] text-white font-bold">
-                  3
+                  <Image
+                    src="/assets/icons/bulb.svg"
+                    width={23}
+                    height={23}
+                    alt="bulb"
+                  />
                 </div>
 
                 <p className="text-gray-800 text-sm leading-5">
-                  Across Sub-Saharan Africa, nearly 600 million people lack
-                  electricity access, and the World Bank&apos;s Mission 300 aims
-                  to connect 300 million people by 2030 through distributed
-                  renewable energy and electrification programs.
+                  Across Sub-Saharan Africa,{" "}
+                  <strong className="font-bold">
+                    nearly 600 million people lack electricity access
+                  </strong>
+                  , and the World Bank&apos;s Mission 300 aims to connect 300
+                  million people by 2030 through distributed renewable energy
+                  and electrification programs.
                 </p>
               </div>
             </div>
@@ -161,7 +189,7 @@ const Landing = () => {
       </FadeInSection>
 
       <FadeInSection>
-        <section className="bg-[url('/assets/images/2-girls.png')] bg-cover bg-center bg-no-repeat min-h-[500px] sm:min-h-[70vh] w-full flex flex-col justify-center items-center mt-16 sm:mt-0 py-16">
+        <section className="bg-[url('/assets/images/we-love-women.png')] bg-cover bg-center bg-no-repeat min-h-[500px] sm:min-h-[83vh] w-full flex flex-col justify-center items-center mt-16 sm:mt-0 py-16">
           <div className="flex h-full w-[90%] sm:w-[80%] flex-col items-center justify-center text-center px-4">
             <h2 className="font-medium leading-[22px] text-[16px] text-white">
               We love women
@@ -169,7 +197,7 @@ const Landing = () => {
 
             <p className="text-white text-[18px] sm:text-[30px] font-geist font-extralight leading-[28px] sm:leading-[100%] mt-4 px-4">
               We approach every project with a gender lens to ensure{" "}
-              <span className="font-newsreader italic font-extralight">
+              <span className="font-newsreader italic font-hairline">
                 women are <br className="hidden sm:block" /> actively
               </span>{" "}
               included as primary beneficiaries of the work we do - in{" "}
@@ -177,14 +205,14 @@ const Landing = () => {
               communities, in business and for work.
             </p>
 
-            <div className="mt-8 gap-1.5 flex">
+            <div className="mt-8 gap-0 flex">
               <button
                 onClick={handleProjects}
-                className="bg-[#E1FCAD] px-5 py-2 font-normal text-[15px] rounded-[30px] text-black"
+                className="bg-[#E1FCAD] px-5 py-2 font-normal text-[15px] rounded-[30px] text-black cursor-pointer"
               >
-                View Projects{" "}
+                View Projects
               </button>
-              <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300">
+              <button className="w-12 h-12 flex items-center justify-center bg-[#E1FCAD] rounded-full transition-colors duration-300 cursor-pointer">
                 <Image
                   src="/assets/icons/up-right-arrow.svg"
                   width={20}
@@ -208,7 +236,11 @@ const Landing = () => {
                 What We Offer
               </p>
               <p className="text-[16px] text-[#383838CC] font-light leading-[26px]">
-                Innovative, affordable, and <span>people-centered </span>
+                Innovative, affordable, and{" "}
+                <span className="font-newsreader italic font-extralight">
+                  people-centered{" "}
+                </span>{" "}
+                <br />
                 approaches to Africa&apos;s energy transition.
               </p>
             </div>

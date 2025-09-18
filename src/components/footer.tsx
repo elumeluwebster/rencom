@@ -33,7 +33,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <h2 className="text-white font-newsreader tracking-tighter text-xl sm:text-3xl md:text-5xl leading-tight">
+            <h2 className="text-white font-newsreader font-light tracking-tighter text-xl sm:text-3xl md:text-5xl leading-tight">
               Ready to build the <br /> future of energy?
             </h2>
 
@@ -78,17 +78,15 @@ const Footer = () => {
 
             <div className="flex flex-col md:flex-row w-full md:w-2/3 gap-6 bg-[#0F3D1C] rounded-3xl px-4 py-6 md:px-4 md:py-3">
               <div className="flex-1 px-1 sm:px-2 flex flex-col justify-center">
-                <h3 className="text-[#fefefb] font-extralight font-geist text-base sm:text-lg md:text-xl mb-4 md:mb-6 leading-snug">
-                  Need to talk about sustainable energy? Please leave{" "}
-                  <br className="hidden sm:inline" />
-                  your mail and we&apos;ll contact you.
+                <h3 className="text-[#fefefb] font-extralight font-geist text-base sm:text-lg md:text-xl mb-4 md:mb-8 leading-snug">
+                  Need to talk about sustainable energy?
                 </h3>
 
                 <div className="flex flex-col sm:flex-row items-stretch gap-3 mb-4">
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="flex-1 p-3 rounded-xl bg-[#0B2E15] text-white placeholder-[#fefefb] font-extralight focus:outline-none transition"
+                    className="flex-1 p-3 rounded-xl bg-[#0B2E15] text-white placeholder-[#fefefb] font-extralight focus:outline-none transition md:w-1/6"
                   />
                   <button className="sm:w-[140px] text-sm w-full py-3 px-4 bg-[#147A06] text-white rounded-full hover:bg-[#0A5E2D] transition duration-200 font-normal cursor-pointer">
                     Subscribe now
@@ -140,23 +138,6 @@ const Footer = () => {
               />
             </div>
           </div>
-
-          {/* <div
-            className="text-center mt-10 font-geist font-extrabold tracking-tight bg-clip-text text-transparent px-4 overflow-x-auto"
-            style={{
-              backgroundImage: "linear-gradient(to right, #087B37, #7ADC51)",
-              WebkitBackgroundClip: "text",
-              backgroundClip: "text",
-              color: "transparent",
-              backgroundSize: "100% 100%",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-            }}
-          >
-            <p className="text-[80px] sm:text-[120px] md:text-[280px] leading-none whitespace-nowrap">
-              RENCOM
-            </p>
-          </div> */}
         </div>
       </footer>
     </section>
