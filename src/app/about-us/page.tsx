@@ -22,28 +22,33 @@ export default function About() {
           <HeaderLight />
         </div>
 
-        <div className="absolute text-white mb-10 px-20 bottom-0 left-0 justify-start">
-          <h2 className="font-newsreader tracking-tighter font-light text-8xl py-2">
-            About Us
+        <div className="ml-6 absolute bg-[#fff] rounded-2xl text-white mb-10 px-10 py-10 bottom-0 left-0 justify-start">
+          <div className="text-black flex border border-[#F2F2F2] rounded-2xl px-2 items-center mt-5 h-7 w-fit font-geist text-[10px]">
+            ABOUT RENCOM
+          </div>
+          <h2 className="font-geist tracking-tight font-light text-black leading-17 text-6xl py-2">
+            Creating Sustainable <br /> Energy Solutions for <br /> All People
           </h2>
-          <p className="mt-4 font-extralight font-geist">
+          <p className="mt-4 text-black font-extralight font-geist">
             We combine innovation, impact, and sustainability to deliver energy
             <br />
             solutions that transform lives and protect the planet.
           </p>
 
           <div
-            className="flex flex-row gap-2 items-center mt-10"
+            className="flex flex-row gap-2 items-center mt-10 mb-5"
             onClick={handleClick}
           >
             <button className="text-black py-3 px-4 rounded-3xl cursor-pointer font-light bg-[#E1FCAD]">
               Continue Reading
             </button>
 
-            <div className="cursor-pointer rounded-full bg-[#E1FCAD] p-3 flex items-center justify-center">
+            <div className="cursor-pointer w-12 h-12 rounded-full bg-[#E1FCAD] p-3 flex items-center justify-center">
               <Image
                 src="/assets/icons/down-right-arrow.svg"
                 alt="arrow icon"
+                width={12}
+                height={12}
                 className="w-4 h-4"
               />
             </div>
@@ -53,12 +58,21 @@ export default function About() {
 
       <div ref={nextSectionRef} className="mt-24 px-4 sm:px-6 md:px-28 pb-24">
         <FadeInSection>
+          <div className="text-center font-geist">
+            <h1 className="text-[7vh]">Our Vision & Mission</h1>
+            <p className="text-black font-extralight text-[18px] leading-8 mt-5">
+              Building sustainable systems, empowering communities, and <br />{" "}
+              fueling economic growth.
+            </p>
+          </div>
           <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 mt-12 mb-20">
             <div className="w-full md:w-1/2">
               <Image
                 src="/assets/images/engineer.png"
                 alt="image of an engineer"
                 className="w-full h-auto rounded-lg"
+                width={2400}
+                height={2400}
               />
             </div>
             <div className="w-full md:w-1/2 space-y-18 flex flex-col">
@@ -136,6 +150,8 @@ export default function About() {
                       <div className="w-6 h-6 bg-[#E8FF9C] flex items-center justify-center rounded">
                         <Image
                           src={item.icon}
+                          width={12}
+                          height={12}
                           alt={`${item.title} icon`}
                           className="w-4 h-4"
                         />
@@ -157,6 +173,8 @@ export default function About() {
               ))}
             </div>
             <Image
+              width={2400}
+              height={2400}
               src="/assets/images/impact.png"
               className="w-full md:w-1/2 mt-6 md:mt-0 rounded-lg"
               alt="Section 2"

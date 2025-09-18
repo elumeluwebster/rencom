@@ -17,7 +17,7 @@ const OurStory = () => {
       <div className="mt-24">
         <section className="min-h-screen w-full flex flex-col gap-30">
           <div className="text-center flex flex-col items-center gap-4">
-            <h2 className="font-normal tracking-tighter text-[60px] sm:text-[40px] xs:text-[28px] font-newsreader leading-[60px] sm:leading-[44px] xs:leading-[32px]">
+            <h2 className="font-normal tracking-tight text-[#012F0E] text-[60px] sm:text-[60px] xs:text-[28px] font-geist leading-[60px] sm:leading-[44px] xs:leading-[32px] mb-4">
               Our Story
             </h2>
             <p className="text-[16px] sm:text-[16px] xs:text-[12px] leading-[24px] sm:leading-[24px] font-geist">
