@@ -24,7 +24,8 @@ const CustomSelect: React.FC<CustomSelectProps> = ({ value, onChange }) => {
   }, []);
 
   const selectedLabel =
-    options.find((opt) => opt.value === value)?.label || "Select reason";
+    options.find((opt) => opt.value === value)?.label ||
+    "Reason for contacting";
 
   return (
     <div className="relative w-full" ref={ref}>
@@ -32,14 +33,14 @@ const CustomSelect: React.FC<CustomSelectProps> = ({ value, onChange }) => {
         type="button"
         onClick={() => setOpen(!open)}
         className={`w-full p-3 text-left bg-[#F4F3EA] border border-[#EDEDED] rounded ${
-          value ? "text-[black]" : "text-[#7a7a76]"
+          value ? "text-[black]" : "text-[#1A1A177A]"
         } focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]`}
       >
         {selectedLabel}
         {open ? (
-          <FiChevronUp className="absolute right-3 top-1/2 transform -translate-y-1/2 text-black pointer-events-none" />
+          <FiChevronUp className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#1A1A177A] pointer-events-none" />
         ) : (
-          <FiChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 text-black pointer-events-none" />
+          <FiChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#1A1A177A] pointer-events-none" />
         )}
       </button>
 

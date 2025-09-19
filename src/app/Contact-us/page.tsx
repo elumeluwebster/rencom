@@ -82,48 +82,14 @@ export default function Contact() {
                   />
                 </a>
               </div>
-
-              <div className=" w-full md:w-[50%] flex flex-col   gap-4 rounded-[16px] p-2 bg-[#3F403C] mt-8">
-                <div className="flex gap-2">
-                  <Image
-                    src="/assets/icons/star.svg"
-                    width={10}
-                    height={10}
-                    alt=""
-                  />
-                  <p className="text-[12px] text-white">4.5</p>
-                </div>
-                <p className="text-white leading-[22px] text-[14px] font-light">
-                  RenCom transformed our ideas <br />
-                  into real solutions that improved access and reduced costs.
-                </p>
-
-                <div className="w-full flex justify-between items-center">
-                  <div className="flex-2 flex flex-col">
-                    <p className="text-[12px]">— Malwina Juice</p>
-                    <p className="text-[12px] text-[#F4F3EA]">
-                      Founder of RenCom®
-                    </p>
-                  </div>
-                  <div className="flex-1 rounded-[32px]">
-                    <Image
-                      src="/assets/images/malwena.png"
-                      width={80}
-                      height={100}
-                      alt="malwana picture"
-                      className="rounded-[32px] object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
             {/* forms  */}
 
             <div className="flex-1">
               <div className="bg-[#E6E8DD] p-6 sm:p-8 rounded-2xl shadow-md">
-                <h3 className="text-[18px]  font-regular text-[#000000] mb-6 sm:mb-8">
-                  Got something in mind? <br />
-                  Let&apos;s bring it to life—begin with a hello.{" "}
+                <h3 className="text-[24px] font-regular text-[#000000] mb-6 sm:mb-8">
+                  We&apos;re ready to hear all you <br /> have to say about
+                  sustainable energy
                 </h3>
                 <form className="space-y-6 sm:space-y-8">
                   <label className="block">
@@ -133,7 +99,7 @@ export default function Contact() {
                     <input
                       type="text"
                       placeholder="Your name here"
-                      className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                      className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-[#1A1A177A] resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                     />
                   </label>
 
@@ -145,7 +111,7 @@ export default function Contact() {
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-black resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-[#1A1A177A] resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                       />
                     </label>
 
@@ -163,7 +129,7 @@ export default function Contact() {
                     </span>
                     <textarea
                       placeholder="Type your message here..."
-                      className="w-full p-3 border border-[#EDEDED] resize-none bg-[#F4F3EA] text-black rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                      className="w-full p-3 border border-[#EDEDED] resize-none bg-[#F4F3EA] text-[#1A1A177A] rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                       rows={10}
                     ></textarea>
                   </label>
@@ -171,7 +137,7 @@ export default function Contact() {
                   <label className="flex items-center w-full space-x-2">
                     <input
                       type="checkbox"
-                      className="mt-1 h-5 w-5 accent-[#B6E400] border-gray-300 cursor-pointer rounded-[8px] focus:ring-[#0F3D1C] focus:border-[#0F3D1C]"
+                      className="h-5 w-5 cursor-pointer rounded-[8px] border border-[#1A1A1729] bg-[#E6E8DD] appearance-none checked:bg-[#E6E8DD] checked:after:content-['✓'] checked:after:text-black checked:after:text-sm checked:after:font-bold checked:after:flex checked:after:items-center checked:after:justify-center checked:after:h-full checked:after:w-full"
                     />
                     <span className="text-[12px] font-normal text-[#1A1A17]">
                       I agree to let RenCom securely store my details for
@@ -206,7 +172,7 @@ export default function Contact() {
           />
         </section>
 
-        <section className="bg-[#D8E4CA] w-full py-36 px-4 sm:px-6 md:px-28">
+        <section className="bg-[#D8E4CA] w-full py-36 px-4 sm:px-6 md:px-10">
           <div className="flex flex-col md:flex-row gap-12 md:gap-20 px-10 md:px-4">
             <div className="flex-1">
               <p className="text-[#0F3D1C] text-lg sm:text-xl font-base">

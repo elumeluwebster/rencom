@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        anton: ["Anton", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         geist: ["Geist", "sans-serif"],
         newsreader: ["Newsreader", "serif"],

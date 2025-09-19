@@ -33,7 +33,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <h2 className="text-white font-newsreader tracking-tighter text-xl sm:text-3xl md:text-5xl leading-tight">
+            <h2 className="text-white font-newsreader font-light tracking-tighter text-xl sm:text-3xl md:text-5xl leading-tight">
               Ready to build the <br /> future of energy?
             </h2>
 
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
       </section>
 
-      <footer className="bg-[#0B2E15] font-geist mt-0 py-8">
+      <footer className="bg-[#0B2E15] font-geist mt-0 pt-8 pb-0">
         <div className="px-2 max-w-screen-xl mx-auto">
           <hr className="border-none h-[0.5px] mt-10 bg-[#134E24] mb-6" />
 
@@ -78,20 +78,18 @@ const Footer = () => {
 
             <div className="flex flex-col md:flex-row w-full md:w-2/3 gap-6 bg-[#0F3D1C] rounded-3xl px-4 py-6 md:px-4 md:py-3">
               <div className="flex-1 px-1 sm:px-2 flex flex-col justify-center">
-                <h3 className="text-[#fefefb] font-extralight font-geist text-base sm:text-lg md:text-xl mb-4 md:mb-6 leading-snug">
-                  Need to talk about sustainable energy? Please leave{" "}
-                  <br className="hidden sm:inline" />
-                  your mail and we&apos;ll contact you.
+                <h3 className="text-[#fefefb] font-extralight font-geist text-base sm:text-lg md:text-xl mb-4 md:mb-8 leading-snug">
+                  Need to talk about sustainable energy?
                 </h3>
 
                 <div className="flex flex-col sm:flex-row items-stretch gap-3 mb-4">
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="flex-1 p-3 rounded-xl bg-[#0B2E15] text-white placeholder-[#fefefb] font-extralight focus:outline-none transition"
+                    className="flex-1 p-3 rounded-xl bg-[#0B2E15] text-white placeholder-[#fefefb] font-extralight focus:outline-none transition md:w-1/6"
                   />
                   <button className="sm:w-[140px] text-sm w-full py-3 px-4 bg-[#147A06] text-white rounded-full hover:bg-[#0A5E2D] transition duration-200 font-normal cursor-pointer">
-                    Subscribe now
+                    Submit
                   </button>
                 </div>
 
@@ -114,7 +112,7 @@ const Footer = () => {
 
           <hr className="border-none h-[0.5px] mt-10 bg-[#134E24] mb-6" />
 
-          <div className="text-[#bcbcbc] font-geist font-extralight pt-4 text-left px-6 md:px-28 text-sm leading-relaxed">
+          <div className="text-[#bcbcbc] font-geist font-extralight pt-4 text-left px-6 md:px-0.5 text-sm leading-relaxed">
             <p>
               RenCom is committed to{" "}
               <span className="font-bold text-white">
@@ -129,21 +127,16 @@ const Footer = () => {
             </p>
           </div>
 
-          <div
-            className="text-center mt-10 font-geist font-extrabold tracking-tight bg-clip-text text-transparent px-4 overflow-x-auto"
-            style={{
-              backgroundImage: "linear-gradient(to right, #087B37, #7ADC51)",
-              WebkitBackgroundClip: "text",
-              backgroundClip: "text",
-              color: "transparent",
-              backgroundSize: "100% 100%",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-            }}
-          >
-            <p className="text-[80px] sm:text-[120px] md:text-[280px] leading-none whitespace-nowrap">
-              RENCOM
-            </p>
+          <div className="flex justify-center items-center px-4 overflow-x-auto pb-0 mb-0 bottom-20">
+            <div className="relative mt-10 w-[1280px] sm:w-[1200px] md:w-[1350px] h-[80px] sm:h-[120px] md:h-[280px]">
+              <Image
+                src="/assets/images/rencom-logo.png"
+                alt="Rencom Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
         </div>
       </footer>
