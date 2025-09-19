@@ -1,11 +1,11 @@
 "use client";
-import React, { useRef } from "react";
 import Image from "next/image";
+import React, { useRef } from "react";
 import { useRouter } from "next/navigation";
 
 import HeaderLight from "@/components/header-light";
-import Carousel from "@/components/carousel";
 import FadeInSection from "@/utils/utils";
+import Slider from "@/components/slider";
 
 const Landing = () => {
   const route = useRouter();
@@ -22,7 +22,7 @@ const Landing = () => {
   return (
     <div>
       <section className="relative bg-gradient-to-b from-[#00330F] to-[#000000] h-[700px] sm:h-[1000px] md:h-[900px] lg:h-[1025px] w-full">
-        <div className="absolute top-0 left-0 w-full">
+        <div className="absolute top-0 left-0 w-full z-50">
           <HeaderLight />
         </div>
 
@@ -85,7 +85,7 @@ const Landing = () => {
       <FadeInSection>
         <section
           ref={nextSectionRef}
-          className="min-h-screen w-full py-16 flex flex-col items-center justify-center bg-[#D8E4CA]"
+          className="min-h-screen w-full py-16 flex flex-col items-center justify-center bg-gradient-to-b from-[#E4E1CA] to-[#D8E4CA]"
         >
           <div className="flex flex-col items-center w-[80%] text-center mb-8 mt-24">
             <p className="text-[#0F3D1C] font-geist font-medium">
@@ -137,7 +137,7 @@ const Landing = () => {
                 />
               </div>
 
-              <div className="flex-1 px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#F0DC83]">
+              <div className="flex-1 px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#F0DC83AD]">
                 <div className="flex items-center ml-5 mb-2 justify-center w-8 h-8 rounded-full bg-[#0F3D1C] text-white font-bold">
                   <Image
                     src="/assets/icons/carbon-neutral.svg"
@@ -160,13 +160,13 @@ const Landing = () => {
             </div>
 
             <div className="flex-1 min-h-[300px] sm:h-full rounded-[18px] p-2 bg-[#A4C085] relative flex items-center justify-start">
-              <div className="w-[60%] h-full">
+              <div className="w-[60%] h-full pb-8">
                 <Image
                   src="/assets/images/sub-sah.png"
                   alt="Clean Cooking Solutions"
                   width={200}
                   height={200}
-                  className="w-full h-[90%] object-cover rounded-lg"
+                  className="w-full h-[80%] object-cover rounded-lg"
                 />
               </div>
 
@@ -180,7 +180,7 @@ const Landing = () => {
                   />
                 </div>
 
-                <p className="text-gray-800 text-sm leading-5">
+                <p className="text-gray-800 text-sm px-3 leading-6">
                   Across Sub-Saharan Africa,{" "}
                   <strong className="font-bold">
                     nearly 600 million people lack electricity access
@@ -254,7 +254,7 @@ const Landing = () => {
           </div>
 
           <div className="mb-16 sm:mb-32">
-            <Carousel />
+            <Slider />
           </div>
         </section>
       </FadeInSection>

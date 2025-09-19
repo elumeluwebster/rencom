@@ -25,7 +25,19 @@ export const collapsibles = [
   },
 ];
 
+export const collapsibleImages = [
+  "/assets/images/testimonies.png",
+  "/assets/images/commitment.png",
+  "/assets/images/africa.png",
+  "/assets/images/earth.png",
+];
+
 export const slides = [
+  {
+    image: "/assets/images/solar-mini-grids.png",
+    title: "Solar Mini-grids",
+    desc: "Develop bespoke mini-grid systems for rural communities and businesses, ensuring clean, affordable power.",
+  },
   {
     image: "/assets/images/solar-home-systems-and-standalone-solutions.png",
     title: "Solar Home Systems and Standalone Solutions",
@@ -46,16 +58,6 @@ export const slides = [
     title: "Consultancy & Technical Assistance",
     desc: "Support Energy Compacts, feasibility studies, planning, and implementation.",
   },
-  {
-    image: "/assets/images/solar-mini-grids.png",
-    title: "Solar Mini-grids",
-    desc: "Develop bespoke mini-grid systems for rural communities and businesses, ensuring clean, affordable power.",
-  },
-  {
-    image: "/assets/images/storage.png",
-    title: "Storage",
-    desc: "Efficient energy storage systems.",
-  },
 ];
 
 export const auto_slides = [
@@ -70,7 +72,7 @@ export const auto_slides = [
 ];
 
 export const options = [
-  { value: "", label: "Select reason" },
+  { value: "", label: "Reason for contacting" },
   { value: "partnership", label: "Partnership" },
   { value: "investment", label: "Investment" },
   { value: "collaboration", label: "Collaboration" },
@@ -114,16 +116,18 @@ export const projectImpactData = [
     Details:
       "Powering rural communities across Kwara state through minigrid projects to improve the lives of inhabitants, reduce carbon emissions and boost the local productivity of the farmers.",
     src: "/assets/images/Component18",
+    zoomedSrc: "/assets/images/Component18-zoomed",
   },
 
   {
     num: 2,
-    Tittle: "AGR0-BOOST",
+    Tittle: "AGRO-BOOST",
     tittle2: "ACTIVATION",
 
     Details:
       "Bringing light and connectivity to underserved farming communities by deploying solar-powered productive use solutions like cold storage systems and solar pumping machines for irrigation to replace hazardous fuel-powered alternatives.",
     src: "/assets/images/Component19",
+    zoomedSrc: "/assets/images/Component19-zoomed",
   },
 
   {
@@ -134,6 +138,7 @@ export const projectImpactData = [
     Details:
       "Deploying clean cookstove or LPG initiatives through female associations and communities in pere-urban neighbourhoods, improving health and reducing environmental harm.",
     src: "/assets/images/Component20",
+    zoomedSrc: "/assets/images/Component20-zoomed",
   },
   {
     num: 4,
@@ -144,5 +149,6 @@ export const projectImpactData = [
     Details:
       "Power Primary Health Care centres in Western Nigeria to reduce the rate of avoidable death from facility inefficiencies.",
     src: "/assets/images/Component21",
+    zoomedSrc: "/assets/images/Component21-zoomed",
   },
 ];

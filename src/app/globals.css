@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+.font-anton {
+  font-family: "Anton", "sans-serif";
+}
 .font-newsreader {
   font-family: "Newsreader", serif;
 }

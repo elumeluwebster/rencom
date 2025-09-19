@@ -54,7 +54,7 @@ const HeaderLight = () => {
           </div>
           <div className="flex items-center md:space-x-4">
             <button
-              className="bg-[#387F1A] text-[#fff] px-6 py-3 rounded-full text-sm font-medium transition-colors duration-200 cursor-pointer hidden md:block"
+              className="bg-[#FFF] text-[#00330F] px-6 py-3 rounded-full text-sm font-medium transition-colors duration-200 cursor-pointer hidden md:block"
               onClick={handleClick}
             >
               Contact Us →
