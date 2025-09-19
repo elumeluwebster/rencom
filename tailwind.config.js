@@ -10,7 +10,8 @@ module.exports = {
       fontFamily: {
         anton: ["Anton", "sans-serif"],
         inter: ["Inter", "sans-serif"],
-        geist: ["Geist", "sans-serif"],
+        impact: ["Impact", "sans-serif"],
+        geist: ["Geist", "serif"],
         newsreader: ["Newsreader", "serif"],
         "geist-mono": ["Geist Mono", "monospace"],
         lobster: ["var(--font-lobster)", "cursive"],

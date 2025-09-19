@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <section>
+    <section className="overscroll-y-none">
       <section>
         <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
           <Image

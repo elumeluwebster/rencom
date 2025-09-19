@@ -34,7 +34,7 @@ export default function Slider() {
 
   return (
     <div className="mt-20 flex justify-center">
-      <div className="max-w-screen-lg w-full px-4 sm:px-8 md:px-3">
+      <div className="max-w-screen-lg w-full px-4 sm:px-2 md:px-3">
         <div className="overflow-visible ">
           <div
             ref={trackRef}

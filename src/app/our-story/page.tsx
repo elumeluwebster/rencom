@@ -81,12 +81,12 @@ const OurStory = () => {
               success
             </h2>
 
-            <div className="flex flex-wrap gap-4 w-full px-4 mb-20">
+            <div className="flex flex-wrap gap-3.5 w-full px-4 mb-20">
               {aboutData.map((items) => (
                 <div
                   key={items.num}
                   onClick={() => handleCardClick(items.num)}
-                  className={`group relative flex-1 basis-full h-[350px] rounded-2xl overflow-hidden bg-cover bg-center sm:basis-[calc(50%-0.5rem)] sm:h-[550px]`}
+                  className={`group relative flex-1 basis-full h-[350px] rounded-lg overflow-hidden bg-cover bg-center sm:basis-[calc(50%-0.5rem)] sm:h-[550px]`}
                   style={{
                     backgroundImage: `url('/assets/images/sustainable${items.num}.png')`,
                   }}

@@ -30,23 +30,23 @@ const HeaderLight = () => {
               />
             </Link>
           </div>
-          <div className="bg-transparent text-[white] hidden md:flex items-center py-3 px-8 rounded-xl font-normal font-questrial">
+          <div className="bg-transparent text-[white] hidden md:flex items-center py-3 px-8 rounded-xl font-extralight font-questrial">
             <div className="flex items-baseline space-x-8">
               <Link
                 href="/about-us"
-                className="hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
+                className="hover:text-[#387F1A] text-base font-extralight transition-colors duration-200"
               >
                 About Us
               </Link>
               <Link
                 href="/Projects-impact"
-                className="hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
+                className="hover:text-[#387F1A] text-base font-extralight transition-colors duration-200"
               >
                 Projects & Impacts
               </Link>
               <Link
                 href="/our-story"
-                className="hover:text-[#387F1A] text-base font-medium transition-colors duration-200"
+                className="hover:text-[#387F1A] text-base font-extralight transition-colors duration-200"
               >
                 Our Story
               </Link>
@@ -54,7 +54,7 @@ const HeaderLight = () => {
           </div>
           <div className="flex items-center md:space-x-4">
             <button
-              className="bg-[#FFF] text-[#00330F] px-6 py-3 rounded-full text-sm font-medium transition-colors duration-200 cursor-pointer hidden md:block"
+              className="bg-[#FFF] text-[#00330F] px-6 py-3 rounded-full text-sm font-extralight transition-colors duration-200 cursor-pointer hidden md:block"
               onClick={handleClick}
             >
               Contact Us →
@@ -96,21 +96,21 @@ const HeaderLight = () => {
         >
           <Link
             href="/about-us"
-            className="block hover:text-[#387F1A] text-base font-medium"
+            className="block hover:text-[#387F1A] text-base font-extralight"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             About Us
           </Link>
           <Link
             href="/Projects-impact"
-            className="block hover:text-[#387F1A] text-base font-medium"
+            className="block hover:text-[#387F1A] text-base font-extralight"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Projects & Impacts
           </Link>
           <Link
             href="/our-story"
-            className="block hover:text-[#387F1A] text-base font-medium"
+            className="block hover:text-[#387F1A] text-base font-extralight"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Our Story
