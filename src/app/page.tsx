@@ -20,18 +20,18 @@ const Landing = () => {
   };
 
   return (
-    <div>
-      <section className="relative bg-gradient-to-b from-[#00330F] to-[#000000] h-[700px] sm:h-[1000px] md:h-[900px] lg:h-[1025px] w-full">
+    <div className=" overscroll-y-none">
+      <section className="relative bg-gradient-to-b from-[#00330F] to-[#000000] h-[700px] sm:h-[1000px] md:h-[900px] lg:h-[1150px] w-full">
         <div className="absolute top-0 left-0 w-full z-50">
           <HeaderLight />
         </div>
 
-        <div className="flex pt-30 w-full flex-col items-center justify-center text-center px-4 div1">
-          <h2 className="text-[73px] font-geist font-normal text-white leading-[83px]">
+        <div className="flex pt-60 w-full flex-col items-center justify-center text-center px-4 div1">
+          <h2 className="text-[73px] font-geist font-semibold text-white leading-[83px]">
             Sustainable <br /> <span className="">Energy Solutions</span>
           </h2>
 
-          <p className="font-geist font-extralight mt-6 max-w-2xl text-[#F2F2F2] text-lg">
+          <p className="font-geist font-thin mt-10 max-w-2xl text-[#F2F2F2] text-lg">
             Based in Nigeria, RenCom is dedicated to delivering dependable,
             sustainable <br /> power solutions for communities and businesses,
             enabling economic growth <br /> and resilient development.

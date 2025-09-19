@@ -40,12 +40,12 @@ export default function ProjectsImpact() {
 
                 <div className="relative z-10 p-2 flex flex-col justify-between h-full">
                   <div className="flex flex-col gap-2 mt-4 ml-4">
-                    <p className="inline-block w-fit text-[26px] text-[#fff] font-bold font-geist tracking-tighter uppercase transition-colors duration-500 group-hover:bg-[#0B2E15] group-hover:text-white group-hover:px-2 group-hover:py-1 rounded">
+                    <p className="inline-block w-fit text-[26px] text-[#fff] font-bold font-impact uppercase transition-colors duration-500 group-hover:bg-[#0B2E15] group-hover:text-white group-hover:px-2 group-hover:py-1 rounded">
                       <span>{items.Tittle}</span>
                     </p>
 
                     {items.tittle2 && (
-                      <p className="inline-block w-fit text-[26px] text-[#fff] font-bold font-geist tracking-tighter uppercase transition-colors duration-500 group-hover:bg-[#0B2E15] group-hover:text-white group-hover:p-2 rounded">
+                      <p className="inline-block w-fit text-[26px] text-[#fff] font-bold font-impact uppercase transition-colors duration-500 group-hover:bg-[#0B2E15] group-hover:text-white group-hover:p-2 rounded">
                         <span>{items.tittle2}</span>
                       </p>
                     )}
@@ -62,19 +62,21 @@ export default function ProjectsImpact() {
               </div>
             ))}
 
-            <div
-              className={`group relative w-full h-[430px] rounded-lg overflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[670px] flex flex-col justify-between`}
-              style={{
-                backgroundImage: `url('/assets/images/impact-metrics.png')`,
-              }}
-            />
+            <div className="flex flex-wrap gap-0 w-full px-4">
+              <div
+                className={`group relative w-full h-[430px] woverflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[670px] flex flex-col justify-between`}
+                style={{
+                  backgroundImage: `url('/assets/images/impact-metrics.png')`,
+                }}
+              />
 
-            <div
-              className={`group relative w-full h-[430px] rounded-lg overflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[670px] flex flex-col justify-between`}
-              style={{
-                backgroundImage: `url('/assets/images/phc-improved.png')`,
-              }}
-            />
+              <div
+                className={`group relative w-full h-[430px] overflow-hidden p-2 bg-cover bg-center sm:flex-1 sm:basis-[calc(50%-0.5rem)] sm:h-[670px] flex flex-col justify-between`}
+                style={{
+                  backgroundImage: `url('/assets/images/phc-improved.png')`,
+                }}
+              />
+            </div>
           </div>
         </section>
       </div>

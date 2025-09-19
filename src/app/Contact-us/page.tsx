@@ -103,7 +103,7 @@ export default function Contact() {
                     />
                   </label>
 
-                  <div className="flex flex-col sm:flex-row gap-2">
+                  <div className="flex flex-col sm:flex-row gap-4">
                     <label className="block w-full sm:w-1/2">
                       <span className="block mb-2 text-[14px] font-extralight text-[#1A1A17]">
                         EMAIL
@@ -111,7 +111,7 @@ export default function Contact() {
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-[#1A1A177A] resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded-lg text-[#1A1A177A] resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                       />
                     </label>
 
