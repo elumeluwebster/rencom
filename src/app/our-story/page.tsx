@@ -27,8 +27,8 @@ const OurStory = () => {
               solutions that transform lives.
             </p>
 
-            <div className="min-w-[120px] flex items-center px-2 py-1.5 border border-[#aaaaa9] rounded-[24px] cursor-pointer">
-              <div className="relative w-[45px] h-[32px] rounded-full overflow-hidden">
+            <div className="min-w-[100px] flex items-center px-2 py-1 border border-[#aaaaa9] rounded-[24px] cursor-pointer">
+              <div className="relative w-[45px] h-[32px] rounded-full py-1 overflow-hidden">
                 <div
                   className="w-full h-full bg-cover bg-center"
                   style={{
@@ -45,7 +45,7 @@ const OurStory = () => {
           </div>
 
           <div className="mb-60">
-            <div className="w-full sm:w-[70%] mx-auto px-6 sm:px-0 h-[300px] sm:h-[475px] flex">
+            <div className="w-full md:w-[700px] sm:w-[70%] mx-auto px-6 sm:px-0 h-[300px] sm:h-[475px] flex">
               <div
                 className="flex-1 bg-cover bg-center rounded-lg"
                 style={{
@@ -63,12 +63,12 @@ const OurStory = () => {
           </div>
         </section>
 
-        <hr className="px-4 mx-5 border-t-2 border-[#c4c4c4]" />
+        <hr className="px-4 mx-5 border-t-0.5 border-[#c4c4c4]" />
 
         <FadeInSection>
           <section className="min-h-screen w-full flex mt-4 flex-col gap-10 p-4">
             <div className="flex items-center gap-1 px-2">
-              <div className="w-4 h-4 bg-[#B6E400] rounded-full  border-white border-2 z-10"></div>
+              <div className="w-3 h-3 bg-[#B6E400] rounded-full z-10"></div>
               <p className="font-geist text-[12.2px] leading-[12px] tracking-[1px]">
                 OUR STORY
               </p>
@@ -86,13 +86,12 @@ const OurStory = () => {
                 <div
                   key={items.num}
                   onClick={() => handleCardClick(items.num)}
-                  className={`group relative flex-1 basis-full h-[350px] rounded-2xl overflow-hidden bg-cover bg-center
-      sm:basis-[calc(50%-0.5rem)] sm:h-[450px]`}
+                  className={`group relative flex-1 basis-full h-[350px] rounded-2xl overflow-hidden bg-cover bg-center sm:basis-[calc(50%-0.5rem)] sm:h-[550px]`}
                   style={{
                     backgroundImage: `url('/assets/images/sustainable${items.num}.png')`,
                   }}
                 >
-                  <div className="absolute inset-0 bg-black/40 z-0"></div>
+                  <div className="absolute inset-0 bg-black/40 z-0 transition-opacity duration-300 group-hover:opacity-70" />
 
                   <div
                     className={`relative z-10 w-full text-white p-3 mt-auto transition-all duration-400 group-hover:-translate-y-4 flex flex-col justify-end h-full ${
@@ -100,7 +99,7 @@ const OurStory = () => {
                     }`}
                   >
                     <div className="w-fit">
-                      <p className="inline-block text-[26px] text-[#a4a0a0] font-bold font-anton transition-colors duration-300 group-hover:bg-black group-hover:text-white group-hover:p-2 rounded">
+                      <p className="inline-block text-[26px] text-[#a4a0a0] font-black mb-4 font-arial tracking-tighter transition-colors duration-300 group-hover:bg-black group-hover:text-white group-hover:p-2 rounded">
                         {items.Tittle}
                       </p>
                     </div>
@@ -111,7 +110,7 @@ const OurStory = () => {
                         activeIndex === items.num ? "opacity-100 max-h-28" : ""
                       }`}
                     >
-                      <div className="w-2 bg-green-500 h-full rounded-full"></div>
+                      <div className="w-0.5 bg-[#B6E400] h-full rounded-full"></div>
 
                       <p className="text-[12px] text-[#F4F3EA] max-w-[50%]">
                         {items.Details}
