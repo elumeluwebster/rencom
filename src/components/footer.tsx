@@ -89,7 +89,7 @@ const Footer = () => {
                     className="flex-1 p-3 rounded-xl bg-[#0B2E15] text-white placeholder-[#fefefb] font-extralight focus:outline-none transition md:w-1/6"
                   />
                   <button className="sm:w-[140px] text-sm w-full py-3 px-4 bg-[#147A06] text-white rounded-full hover:bg-[#0A5E2D] transition duration-200 font-normal cursor-pointer">
-                    Subscribe now
+                    Submit
                   </button>
                 </div>
 
