@@ -21,7 +21,7 @@ const Landing = () => {
 
   return (
     <div className=" overscroll-y-none">
-      <section className="relative bg-gradient-to-b from-[#00330F] to-[#000000] h-[700px] sm:h-[1000px] md:h-[900px] lg:h-[1150px] w-full">
+      <section className="relative bg-gradient-to-b from-[#00330F] to-[#000000] h-[900px] sm:h-[1000px] md:h-[900px] lg:h-[1150px] w-full">
         <div className="absolute top-0 left-0 w-full z-50">
           <HeaderLight />
         </div>
@@ -94,25 +94,29 @@ const Landing = () => {
             <h2 className="mt-6 text-[28px] sm:text-[40px] font-extralight font-geist w-full sm:w-[80%] text-center text-[#0F3D1C]">
               Driving{" "}
               <span className="font-newsreader italic tracking-tighter">
-                Africa&apos;s Shift{" "}
+                Africa&apos;s Shift
               </span>{" "}
               to Renewable <br className="hidden sm:block" />
-              Energy with Inclusion at its Core.{" "}
+              Energy with Inclusion at its Core.
             </h2>
           </div>
 
-          <div className="w-full mt-4 px-4 sm:ml-48 justify-start">
-            <Image
-              src="/assets/icons/why-it-matters.svg"
-              height={100}
-              width={100}
-              alt="why it matters"
-            />
+          <div className="relative w-full">
+            <div className="hidden sm:block absolute left-35 sm:left-35 lg:left-38 top-0 z-30">
+              <Image
+                src="/assets/icons/matters.svg"
+                height={150}
+                width={150}
+                alt="why it matters"
+                className="pointer-events-none hidden lg:block"
+              />
+            </div>
           </div>
 
-          <div className="mt-10 w-[90%] sm:w-full md:w-[60%] min-h-[450px] bg-[#D8E4CA] flex flex-col sm:flex-row gap-3 rounded-[18px] p-2">
-            <div className="flex sm:w-[44%] md:w-[44%] lg:w-[44%] w-full flex-row sm:flex-col md:flex-col lg:flex-col gap-3">
-              <div className="flex-1 relative px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#C4D6B0]">
+          {/* TODO -- change to tomato for debugging l8r */}
+          <div className="mt-10 w-[90%] sm:w-full md:w-[60%] min-h-[450px] flex flex-col gap-3 sm:flex-col lg:flex-row rounded-[18px] p-2 bg-[#D8E4CA]">
+            <div className="flex flex-col gap-3 w-full lg:w-[44%]">
+              <div className="flex-1 relative px-2 py-8 rounded-[18px] flex flex-col gap-4.5 justify-between bg-[#C4D6B0]">
                 <div className="flex items-center ml-5 justify-center w-8 h-8 rounded-full bg-[#0F3D1C] text-white font-bold">
                   <Image
                     src="/assets/icons/energy-challenge.svg"
@@ -121,20 +125,13 @@ const Landing = () => {
                     alt="bulb"
                   />
                 </div>
-                <p className="text-[#0F3D1C] text-[15px] px-7 leading-[24px] mt-2">
+                <p className="text-[#0F3D1C] text-[15px] px-8 leading-[24px] mt-2">
                   There is a huge access to{" "}
                   <strong>energy challenge faced by Nigerians</strong>, both
                   from the availability and affordability perspectives.
                   Alternative solutions are neither healthy, affordable, nor
                   sustainable.
                 </p>
-                <Image
-                  src="/assets/icons/curved-arrow.svg"
-                  alt="Clean Cooking Solutions"
-                  width={100}
-                  height={100}
-                  className="absolute left-[-150px] bottom-[100px] hidden lg:block"
-                />
               </div>
 
               <div className="flex-1 px-2 py-6 rounded-[18px] flex flex-col justify-between bg-[#F0DC83AD]">
@@ -148,29 +145,26 @@ const Landing = () => {
                 </div>
                 <p className="text-[#1B1700] font-light text-[15px] px-8 mt-2 leading-[24px]">
                   Nigeria&apos;s Energy Transition Plan targets{" "}
-                  <br className="hidden sm:block" />{" "}
                   <strong className="font-bold">carbon neutrality</strong> by
-                  2060 while expanding <br className="hidden sm:block" /> modern
-                  energy access and decarbonizing{" "}
-                  <br className="hidden sm:block" /> key sectors&mdash;aligning
-                  closely with <br className="hidden sm:block" /> RenCom&apos;s
+                  2060 while expanding modern energy access and decarbonizing
+                  key sectors&mdash;aligning closely with RenCom&apos;s
                   approach.
                 </p>
               </div>
             </div>
 
-            <div className="flex-1 min-h-[300px] sm:h-full rounded-[18px] p-2 bg-[#A4C085] relative flex items-center justify-start">
-              <div className="w-[60%] h-full pb-8">
+            <div className="flex-1 min-h-[300px] rounded-[18px] p-2 bg-[#A4C085] relative flex items-center justify-start">
+              <div className="w-[60%] h-full pb-8 sm:justify-center">
                 <Image
                   src="/assets/images/sub-sah.png"
                   alt="Clean Cooking Solutions"
                   width={200}
                   height={200}
-                  className="w-full h-[80%] object-cover rounded-lg"
+                  className="w-full h-[100%] object-cover rounded-lg"
                 />
               </div>
 
-              <div className="absolute bottom-[1.5%] left-[10px] sm:left-[90px] bg-[#F1EDDA] rounded-lg shadow-lg w-[85%] sm:w-[80%] p-4 flex flex-col gap-3">
+              <div className="absolute bottom-[1.5%] left-[10px] sm:left-[90px] bg-[#F1EDDA] rounded-lg shadow-lg w-[85%] sm:w-[80%] md:w-[70%] lg:w-[78%] p-4 flex flex-col gap-3">
                 <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0F3D1C] text-white font-bold">
                   <Image
                     src="/assets/icons/bulb.svg"
@@ -179,7 +173,6 @@ const Landing = () => {
                     alt="bulb"
                   />
                 </div>
-
                 <p className="text-gray-800 text-sm px-3 leading-6">
                   Across Sub-Saharan Africa,{" "}
                   <strong className="font-bold">
@@ -253,7 +246,7 @@ const Landing = () => {
             </div>
           </div>
 
-          <div className="mb-16 sm:mb-32">
+          <div className="w-[90%] sm:w-[80%] pl-2 mt-16 mb-28">
             <Slider />
           </div>
         </section>

@@ -127,7 +127,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex justify-center items-center px-4 overflow-x-auto pb-0 mb-0 bottom-20">
+          <div className="flex justify-center items-center overflow-x-auto pb-0 mb-0 bottom-20">
             <div className="relative mt-10 w-[1280px] sm:w-[1200px] md:w-[1350px] h-[80px] sm:h-[120px] md:h-[280px]">
               <Image
                 src="/assets/images/rencom-logo.png"

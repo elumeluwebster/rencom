@@ -33,7 +33,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({ value, onChange }) => {
         type="button"
         onClick={() => setOpen(!open)}
         className={`w-full p-3 text-left bg-[#F4F3EA] border border-[#EDEDED] rounded-lg ${
-          value ? "text-[#1A1A177A]" : "text-[#1A1A177A]"
+          value ? "text-[#1A1A17]" : "text-[#1A1A177A]"
         } focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]`}
       >
         {selectedLabel}
@@ -49,7 +49,8 @@ const CustomSelect: React.FC<CustomSelectProps> = ({ value, onChange }) => {
           {options.map((opt) => (
             <li
               key={opt.value}
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
                 onChange(opt.value);
                 setOpen(false);
               }}

@@ -93,30 +93,30 @@ export default function Contact() {
                 </h3>
                 <form className="space-y-6 sm:space-y-8">
                   <label className="block">
-                    <span className="block mb-2 text-[14px] font-extralight text-[#1A1A17]">
+                    <span className="block mb-2 text-[12px] font-extralight text-[#1A1A17]">
                       FULL NAME
                     </span>
                     <input
                       type="text"
                       placeholder="Your name here"
-                      className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-[#1A1A177A] resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                      className="flex-1 w-full p-3 border border-[#EDEDED] rounded text-[#1A1A17] resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                     />
                   </label>
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <label className="block w-full sm:w-1/2">
-                      <span className="block mb-2 text-[14px] font-extralight text-[#1A1A17]">
+                      <span className="block mb-2 text-[12px] font-extralight text-[#1A1A17]">
                         EMAIL
                       </span>
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded-lg text-[#1A1A177A] resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                        className="flex-1 w-full p-3 border border-[#EDEDED] rounded-lg text-[#1A1A17] resize-none bg-[#F4F3EA] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                       />
                     </label>
 
                     <label className="block w-full sm:w-1/2">
-                      <span className="block mb-2 text-[14px] font-geist font-extralight text-[#1A1A17]">
+                      <span className="block mb-2 text-[12px] font-geist font-extralight text-[#1A1A17]">
                         SELECT REASON
                       </span>
                       <CustomSelect value={reason} onChange={setReason} />
@@ -124,12 +124,12 @@ export default function Contact() {
                   </div>
 
                   <label className="block">
-                    <span className="block mb-2 text-sm font-medium text-gray-700">
+                    <span className="block mb-2 text-[12px] font-extralight text-[#1A1A17] uppercase">
                       Message
                     </span>
                     <textarea
                       placeholder="Type your message here..."
-                      className="w-full p-3 border border-[#EDEDED] resize-none bg-[#F4F3EA] text-[#1A1A177A] rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
+                      className="w-full p-3 border border-[#EDEDED] resize-none bg-[#F4F3EA] text-[#1A1A17] rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#0F3D1C]"
                       rows={10}
                     ></textarea>
                   </label>
@@ -183,29 +183,31 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="flex-1 flex flex-col gap-2">
-              <p className="text-[#000] text-lg sm:text-xl font-semibold">
-                Email
+            <div className="flex-1 flex flex-col gap-2 font-geist">
+              <p className="text-[#000] text-lg sm:text-xl font-medium">
+                Email Address
               </p>
               <div className="w-8 h-1 bg-[#000]"></div>
-              <p className="text-[#0F3D1C] break-words">
+              <p className="text-[#000] break-words font-regular mt-7">
                 rencomlimited@gmail.com
               </p>
               <p className="text-[#000] mt-2">Assistance hours:</p>
               <p className="text-[#000]">
-                Monday - Friday <br className="md:hidden" /> 6 am to 8 pm EST
+                Monday - Friday <br className="md:hidden" /> 8 am to{" "}
+                <br className="" /> 5 pm WAT
               </p>
             </div>
 
-            <div className="flex-1 flex flex-col gap-2">
-              <p className="text-[#000] text-lg sm:text-xl font-semibold">
+            <div className="flex-1 flex flex-col gap-2 font-geist">
+              <p className="text-[#000] text-lg sm:text-xl font-medium">
                 Phone
               </p>
               <div className="w-8 h-1 bg-[#000]"></div>
-              <p className="text-[#000]">(808) 998-34256</p>
+              <p className="text-[#000] mt-7">(000) 123-45678</p>
               <p className="text-[#000] mt-2">Assistance hours:</p>
               <p className="text-[#000]">
-                Monday - Friday <br className="md:hidden" /> 6 am to 8 pm EST
+                Monday - Friday <br className="md:hidden" /> 8 am to{" "}
+                <br className="" /> 5 pm WAT
               </p>
             </div>
           </div>
